@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <step_motor/STEP_MOTOR.h>
 
 // Sağ motor bağlantısı
 #define motor_right_enable 23
@@ -10,82 +11,61 @@
 #define motor_left_dir_pin 24
 #define motor_left_pwm 3
 
+step_motor motor_right(motor_right_enable, motor_right_dir_pin, motor_right_pwm);
+step_motor motor_left(motor_left_enable, motor_left_dir_pin, motor_left_pwm);
+
+void fSerialRead();
+void fMotorMove();
+
 void setup()
 {
-  // Motor pinleri çıkış olarak ayarlanır
-  pinMode(motor_right_enable, OUTPUT);
-  pinMode(motor_right_dir_pin, OUTPUT);
-  pinMode(motor_right_pwm, OUTPUT);
-
-  pinMode(motor_left_enable, OUTPUT);
-  pinMode(motor_left_dir_pin, OUTPUT);
-  pinMode(motor_left_pwm, OUTPUT);
-
-  // Motorlar durdurulur
-  digitalWrite(motor_right_enable, LOW);
-  digitalWrite(motor_right_dir_pin, LOW);
-  analogWrite(motor_right_pwm, 0);
-
-  digitalWrite(motor_left_enable, LOW);
-  digitalWrite(motor_left_dir_pin, LOW);
-  analogWrite(motor_left_pwm, 0);
-
-  // Seri haberleşme başlatılır
   Serial.begin(9600);
+  motor_right.enable();
+  motor_left.enable();
 }
 
 void loop()
 {
-  // Seri haberleşme ile gelen veri okunur
+  fSerialRead();
+  fMotorMove();
+}
+
+void fSerialRead()
+{
   if (Serial.available() > 0)
   {
-    char data = Serial.read();
-
-    // Gelen veriye göre motorlar kontrol edilir
-    switch (data)
+    char command = Serial.read();
+    switch (command)
     {
-    case 'F':
-      // İleri hareket
-      digitalWrite(motor_right_dir_pin, HIGH);
-      digitalWrite(motor_left_dir_pin, HIGH);
-      analogWrite(motor_right_pwm, 255);
-      analogWrite(motor_left_pwm, 255);
+    case 'w':
+      motor_right.set_direction(true);
+      motor_left.set_direction(true);
       break;
-
-    case 'B':
-      // Geri hareket
-      digitalWrite(motor_right_dir_pin, LOW);
-      digitalWrite(motor_left_dir_pin, LOW);
-      analogWrite(motor_right_pwm, 255);
-      analogWrite(motor_left_pwm, 255);
+    case 's':
+      motor_right.set_direction(false);
+      motor_left.set_direction(false);
       break;
-
-    case 'L':
-      // Sol hareket
-      digitalWrite(motor_right_dir_pin, HIGH);
-      digitalWrite(motor_left_dir_pin, LOW);
-      analogWrite(motor_right_pwm, 255);
-      analogWrite(motor_left_pwm, 255);
+    case 'a':
+      motor_right.set_direction(true);
+      motor_left.set_direction(false);
       break;
-
-    case 'R':
-      // Sağ hareket
-      digitalWrite(motor_right_dir_pin, LOW);
-      digitalWrite(motor_left_dir_pin, HIGH);
-      analogWrite(motor_right_pwm, 255);
-      analogWrite(motor_left_pwm, 255);
+    case 'd':
+      motor_right.set_direction(false);
+      motor_left.set_direction(true);
       break;
-
-    case 'S':
-      // Durma
-      digitalWrite(motor_right_enable, LOW);
-      digitalWrite(motor_right_dir_pin, LOW);
-      analogWrite(motor_right_pwm, 0);
-
-      digitalWrite(motor_left_enable, LOW);
-      digitalWrite(motor_left_dir_pin, LOW);
-      analogWrite(motor_left_pwm, 0);
+    case 'q':
+      motor_right.disable();
+      motor_left.disable();
+      break;
+    default:
       break;
     }
   }
+}
+
+void fMotorMove()
+{
+  motor_right.step();
+  motor_left.step();
+  delay(1);
 }
