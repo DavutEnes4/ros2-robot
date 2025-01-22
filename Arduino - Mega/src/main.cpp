@@ -36,45 +36,56 @@ void setup()
 
 void loop()
 {
-  // Motorlar ileri yönde çalıştırılır
-  function_motor_start(motor_right_enable, motor_right_dir_pin, motor_right_pwm, 255);
-  function_motor_start(motor_left_enable, motor_left_dir_pin, motor_left_pwm, 255);
+  // Seri haberleşme ile gelen veri okunur
+  if (Serial.available() > 0)
+  {
+    char data = Serial.read();
 
-  // 1 saniye beklenir
-  delay(1000);
+    // Gelen veriye göre motorlar kontrol edilir
+    switch (data)
+    {
+    case 'F':
+      // İleri hareket
+      digitalWrite(motor_right_dir_pin, HIGH);
+      digitalWrite(motor_left_dir_pin, HIGH);
+      analogWrite(motor_right_pwm, 255);
+      analogWrite(motor_left_pwm, 255);
+      break;
 
-  // Motorlar durdurulur
-  function_motor_stop(motor_right_enable, motor_right_dir_pin, motor_right_pwm);
-  function_motor_stop(motor_left_enable, motor_left_dir_pin, motor_left_pwm);
+    case 'B':
+      // Geri hareket
+      digitalWrite(motor_right_dir_pin, LOW);
+      digitalWrite(motor_left_dir_pin, LOW);
+      analogWrite(motor_right_pwm, 255);
+      analogWrite(motor_left_pwm, 255);
+      break;
 
-  // 1 saniye beklenir
-  delay(1000);
+    case 'L':
+      // Sol hareket
+      digitalWrite(motor_right_dir_pin, HIGH);
+      digitalWrite(motor_left_dir_pin, LOW);
+      analogWrite(motor_right_pwm, 255);
+      analogWrite(motor_left_pwm, 255);
+      break;
 
-  // Motorlar geri yönde çalıştırılır
-  function_motor_start(motor_right_enable, motor_right_dir_pin, motor_right_pwm, 255);
-  function_motor_start(motor_left_enable, motor_left_dir_pin, motor_left_pwm, 255);
+    case 'R':
+      // Sağ hareket
+      digitalWrite(motor_right_dir_pin, LOW);
+      digitalWrite(motor_left_dir_pin, HIGH);
+      analogWrite(motor_right_pwm, 255);
+      analogWrite(motor_left_pwm, 255);
+      break;
 
-  // 1 saniye beklenir
-  delay(1000);
+    case 'S':
+      // Durma
+      digitalWrite(motor_right_enable, LOW);
+      digitalWrite(motor_right_dir_pin, LOW);
+      analogWrite(motor_right_pwm, 0);
 
-  // Motorlar durdurulur
-  function_motor_stop(motor_right_enable, motor_right_dir_pin, motor_right_pwm);
-  function_motor_stop(motor_left_enable, motor_left_dir_pin, motor_left_pwm);
-
-  // 1 saniye beklenir
-  delay(1000);
-}
-
-void function_motor_start(int motor_enable, int motor_dir_pin, int motor_pwm, int motor_speed)
-{
-  digitalWrite(motor_enable, HIGH);
-  digitalWrite(motor_dir_pin, HIGH);
-  analogWrite(motor_pwm, motor_speed);
-}
-
-void function_motor_stop(int motor_enable, int motor_dir_pin, int motor_pwm)
-{
-  digitalWrite(motor_enable, LOW);
-  digitalWrite(motor_dir_pin, LOW);
-  analogWrite(motor_pwm, 0);
+      digitalWrite(motor_left_enable, LOW);
+      digitalWrite(motor_left_dir_pin, LOW);
+      analogWrite(motor_left_pwm, 0);
+      break;
+    }
+  }
 }
