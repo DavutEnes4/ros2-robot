@@ -1,0 +1,24 @@
+[2.616s] Invoking command in '/home/encoder/Desktop/badem-robot/ros2_ws/src/serial_pubsub': PYTHONPATH=/home/encoder/Desktop/badem-robot/ros2_ws/build/serial_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/badem-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_pubsub build --build-base /home/encoder/Desktop/badem-robot/ros2_ws/build/serial_pubsub/build install --record /home/encoder/Desktop/badem-robot/ros2_ws/build/serial_pubsub/install.log --single-version-externally-managed install_data
+[3.355s] running egg_info
+[3.356s] writing ../../build/serial_pubsub/serial_pubsub.egg-info/PKG-INFO
+[3.357s] writing dependency_links to ../../build/serial_pubsub/serial_pubsub.egg-info/dependency_links.txt
+[3.357s] writing entry points to ../../build/serial_pubsub/serial_pubsub.egg-info/entry_points.txt
+[3.358s] writing requirements to ../../build/serial_pubsub/serial_pubsub.egg-info/requires.txt
+[3.358s] writing top-level names to ../../build/serial_pubsub/serial_pubsub.egg-info/top_level.txt
+[3.362s] reading manifest file '../../build/serial_pubsub/serial_pubsub.egg-info/SOURCES.txt'
+[3.363s] adding license file 'LICENSE'
+[3.364s] writing manifest file '../../build/serial_pubsub/serial_pubsub.egg-info/SOURCES.txt'
+[3.365s] running build
+[3.365s] running build_py
+[3.366s] running install
+[3.366s] running install_lib
+[3.372s] running install_data
+[3.372s] running install_egg_info
+[3.376s] removing '/home/encoder/Desktop/badem-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub-0.0.0-py3.10.egg-info' (and everything under it)
+[3.376s] Copying ../../build/serial_pubsub/serial_pubsub.egg-info to /home/encoder/Desktop/badem-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub-0.0.0-py3.10.egg-info
+[3.378s] running install_scripts
+[3.429s] Installing cPublisher script to /home/encoder/Desktop/badem-robot/ros2_ws/install/serial_pubsub/lib/serial_pubsub
+[3.429s] Installing kPublisher script to /home/encoder/Desktop/badem-robot/ros2_ws/install/serial_pubsub/lib/serial_pubsub
+[3.429s] Installing kSubscriber script to /home/encoder/Desktop/badem-robot/ros2_ws/install/serial_pubsub/lib/serial_pubsub
+[3.430s] writing list of installed files to '/home/encoder/Desktop/badem-robot/ros2_ws/build/serial_pubsub/install.log'
+[3.491s] Invoked command in '/home/encoder/Desktop/badem-robot/ros2_ws/src/serial_pubsub' returned '0': PYTHONPATH=/home/encoder/Desktop/badem-robot/ros2_ws/build/serial_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/badem-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_pubsub build --build-base /home/encoder/Desktop/badem-robot/ros2_ws/build/serial_pubsub/build install --record /home/encoder/Desktop/badem-robot/ros2_ws/build/serial_pubsub/install.log --single-version-externally-managed install_data

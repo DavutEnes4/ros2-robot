@@ -14,6 +14,7 @@
 #define STEP_MOTOR_H
 
 #include <Arduino.h>
+#include <ArduinoJson.h>
 
 class step_motor
 {
@@ -73,6 +74,21 @@ public:
      */
     void disable();
 
+    /**
+     * @brief Motorun bilgilerini seri porttan yazdırır
+     */
+    void info();
+
+    /**
+     * @brief Motorun bilgilerini seri porttan yazdırır
+     */
+    void read();
+
+    /**
+     * @brief Motorun bilgilerini JSON formatına uygun string şeklinde döndürür
+     * 
+     */
+    String jsonWrite();
 private:
     int enable_pin;      /**< Motoru etkinleştirme pini */
     int dir_pin;         /**< Yön kontrol pini */

@@ -1,5 +1,6 @@
 #include "STEP_MOTOR.h"
-
+#include <Arduino.h>
+#include <ArduinoJson.h>
 
 step_motor::step_motor(int enable_pin, int dir_pin, int pwm_pin)
 {
@@ -86,4 +87,35 @@ void step_motor::enable()
 void step_motor::disable()
 {
     digitalWrite(enable_pin, HIGH); // Motoru devre dışı bırak
+}
+
+void step_motor::info()
+{
+    Serial.println("Motor Configuration:");
+    Serial.println("Enable Pin: " + String(enable_pin));
+    Serial.println("Direction Pin: " + String(dir_pin));
+    Serial.println("PWM Pin: " + String(pwm_pin));
+    Serial.println("Step Period: " + String(step_period) + " microseconds");
+    Serial.println("Max Radius: " + String(maxRadius));
+    Serial.println("Max Frequency: " + String(maxFrequency) + " Hz");
+    Serial.println("Last Step Time: " + String(lastStepTime));
+    Serial.println("Step Interval: " + String(stepInterval) + " microseconds");
+}
+
+String step_motor::jsonWrite()
+{
+    StaticJsonDocument<256> jsonDoc;
+
+    jsonDoc["enable_pin"] = enable_pin;
+    jsonDoc["dir_pin"] = dir_pin;
+    jsonDoc["pwm_pin"] = pwm_pin;
+    jsonDoc["step_period"] = step_period;
+    jsonDoc["maxRadius"] = maxRadius;
+    jsonDoc["maxFrequency"] = maxFrequency;
+    jsonDoc["lastStepTime"] = lastStepTime;
+    jsonDoc["stepInterval"] = stepInterval;
+
+    String jsonStr;
+    serializeJson(jsonDoc, jsonStr);
+    return jsonStr;
 }

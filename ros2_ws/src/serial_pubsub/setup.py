@@ -20,6 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'kPublisher = serial_pubsub.keyboard_publisher:main',
+            'kSubscriber = serial_pubsub.keyboard_subscriber:main',
+            'cPublisher = serial_pubsub.controller_publisher:main',
         ],
     },
 )
