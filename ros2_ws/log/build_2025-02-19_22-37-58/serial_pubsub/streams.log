@@ -1,0 +1,24 @@
+[1.565s] Invoking command in '/home/badem-robot/badem/ros2_ws/src/serial_pubsub': PYTHONPATH=/home/badem-robot/badem/ros2_ws/build/serial_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/badem-robot/badem/ros2_ws/install/serial_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_pubsub build --build-base /home/badem-robot/badem/ros2_ws/build/serial_pubsub/build install --record /home/badem-robot/badem/ros2_ws/build/serial_pubsub/install.log --single-version-externally-managed install_data
+[1.931s] running egg_info
+[1.956s] writing ../../build/serial_pubsub/serial_pubsub.egg-info/PKG-INFO
+[1.957s] writing dependency_links to ../../build/serial_pubsub/serial_pubsub.egg-info/dependency_links.txt
+[1.957s] writing entry points to ../../build/serial_pubsub/serial_pubsub.egg-info/entry_points.txt
+[1.957s] writing requirements to ../../build/serial_pubsub/serial_pubsub.egg-info/requires.txt
+[1.957s] writing top-level names to ../../build/serial_pubsub/serial_pubsub.egg-info/top_level.txt
+[2.010s] reading manifest file '../../build/serial_pubsub/serial_pubsub.egg-info/SOURCES.txt'
+[2.010s] adding license file 'LICENSE'
+[2.011s] writing manifest file '../../build/serial_pubsub/serial_pubsub.egg-info/SOURCES.txt'
+[2.011s] running build
+[2.011s] running build_py
+[2.012s] running install
+[2.021s] running install_lib
+[2.047s] running install_data
+[2.047s] running install_egg_info
+[2.075s] removing '/home/badem-robot/badem/ros2_ws/install/serial_pubsub/lib/python3.12/site-packages/serial_pubsub-0.0.0-py3.12.egg-info' (and everything under it)
+[2.075s] Copying ../../build/serial_pubsub/serial_pubsub.egg-info to /home/badem-robot/badem/ros2_ws/install/serial_pubsub/lib/python3.12/site-packages/serial_pubsub-0.0.0-py3.12.egg-info
+[2.076s] running install_scripts
+[2.254s] Installing cPublisher script to /home/badem-robot/badem/ros2_ws/install/serial_pubsub/lib/serial_pubsub
+[2.255s] Installing kPublisher script to /home/badem-robot/badem/ros2_ws/install/serial_pubsub/lib/serial_pubsub
+[2.255s] Installing kSubscriber script to /home/badem-robot/badem/ros2_ws/install/serial_pubsub/lib/serial_pubsub
+[2.255s] writing list of installed files to '/home/badem-robot/badem/ros2_ws/build/serial_pubsub/install.log'
+[2.358s] Invoked command in '/home/badem-robot/badem/ros2_ws/src/serial_pubsub' returned '0': PYTHONPATH=/home/badem-robot/badem/ros2_ws/build/serial_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/badem-robot/badem/ros2_ws/install/serial_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_pubsub build --build-base /home/badem-robot/badem/ros2_ws/build/serial_pubsub/build install --record /home/badem-robot/badem/ros2_ws/build/serial_pubsub/install.log --single-version-externally-managed install_data
