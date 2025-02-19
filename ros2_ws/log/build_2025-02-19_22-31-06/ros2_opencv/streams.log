@@ -1,0 +1,25 @@
+[1.511s] Invoking command in '/home/badem-robot/badem/ros2_ws/build/ros2_opencv': PYTHONPATH=/home/badem-robot/badem/ros2_ws/build/ros2_opencv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/badem-robot/badem/ros2_ws/install/ros2_opencv/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/badem-robot/badem/ros2_ws/build/ros2_opencv/build --no-deps symlink_data
+[1.958s] running develop
+[2.216s] running egg_info
+[2.216s] creating ros2_opencv.egg-info
+[2.240s] writing ros2_opencv.egg-info/PKG-INFO
+[2.240s] writing dependency_links to ros2_opencv.egg-info/dependency_links.txt
+[2.240s] writing entry points to ros2_opencv.egg-info/entry_points.txt
+[2.240s] writing requirements to ros2_opencv.egg-info/requires.txt
+[2.241s] writing top-level names to ros2_opencv.egg-info/top_level.txt
+[2.241s] writing manifest file 'ros2_opencv.egg-info/SOURCES.txt'
+[2.291s] reading manifest file 'ros2_opencv.egg-info/SOURCES.txt'
+[2.291s] writing manifest file 'ros2_opencv.egg-info/SOURCES.txt'
+[2.320s] running build_ext
+[2.320s] Creating /home/badem-robot/badem/ros2_ws/install/ros2_opencv/lib/python3.12/site-packages/ros2-opencv.egg-link (link to .)
+[2.321s] Installing publisher_node script to /home/badem-robot/badem/ros2_ws/install/ros2_opencv/lib/ros2_opencv
+[2.321s] Installing subcriber_node script to /home/badem-robot/badem/ros2_ws/install/ros2_opencv/lib/ros2_opencv
+[2.322s] 
+[2.322s] Installed /home/badem-robot/badem/ros2_ws/build/ros2_opencv
+[2.322s] running symlink_data
+[2.322s] creating /home/badem-robot/badem/ros2_ws/install/ros2_opencv/share/ament_index
+[2.323s] creating /home/badem-robot/badem/ros2_ws/install/ros2_opencv/share/ament_index/resource_index
+[2.323s] creating /home/badem-robot/badem/ros2_ws/install/ros2_opencv/share/ament_index/resource_index/packages
+[2.323s] symbolically linking /home/badem-robot/badem/ros2_ws/build/ros2_opencv/resource/ros2_opencv -> /home/badem-robot/badem/ros2_ws/install/ros2_opencv/share/ament_index/resource_index/packages
+[2.323s] symbolically linking /home/badem-robot/badem/ros2_ws/build/ros2_opencv/package.xml -> /home/badem-robot/badem/ros2_ws/install/ros2_opencv/share/ros2_opencv
+[2.462s] Invoked command in '/home/badem-robot/badem/ros2_ws/build/ros2_opencv' returned '0': PYTHONPATH=/home/badem-robot/badem/ros2_ws/build/ros2_opencv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/badem-robot/badem/ros2_ws/install/ros2_opencv/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/badem-robot/badem/ros2_ws/build/ros2_opencv/build --no-deps symlink_data
