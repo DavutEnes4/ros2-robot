@@ -52,7 +52,7 @@ class ControllerPublisher(Node):
                             or (y_axis is not None and abs(y_axis - (self.last_y or 0)) > 5)
                         ) and time_diff >= 0.1:  # 100ms
                             msg = String()
-                            msg.data = f"{x_axis}, {y_axis}"
+                            msg.data = f"{x_axis},{y_axis}\n"
                             self.publisher_.publish(msg)
                             self.get_logger().info(f"Publishing: {msg.data}")
 
