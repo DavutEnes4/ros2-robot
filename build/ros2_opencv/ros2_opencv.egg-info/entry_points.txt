@@ -1,0 +1,4 @@
+[console_scripts]
+publisher_node = ros2_opencv.cameraPublisher:main
+subcriber_node = ros2_opencv.subcriberImage:main
+
