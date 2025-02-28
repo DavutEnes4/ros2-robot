@@ -1,48 +1,29 @@
-import cv2
 import rclpy
-from sensor_msgs.msg import Image
 from rclpy.node import Node
-from cv_bridge import CvBridge
-from rclpy.qos import QoSProfile, QoSReliabilityPolicy
+from sensor_msgs.msg import LaserScan
 
-class SubscriberNodeClass(Node):
-
+class LidarSubscriber(Node):
     def __init__(self):
-        super().__init__('subscriber_node')
-
-        self.bridgeObject = CvBridge()
-        self.topicNameFrames = 'topic_camera_image'
-
-        # QoS Profili oluştur (BEST_EFFORT veya RELIABLE seçilebilir)
-        #qos_profile = QoSProfile(depth=20, reliability=QoSReliabilityPolicy.BEST_EFFORT)
-
-        # Abonelik oluştur
+        super().__init__('lidar_subscriber')
         self.subscription = self.create_subscription(
-            Image,
-            self.topicNameFrames,
-            self.listener_callbackFunction, 10
+            LaserScan,
+            '/scan',  # LIDAR verisinin geldiği varsayılan ROS2 topic adı
+            self.lidar_callback,
+            10  # QoS profili
         )
-        self.i = 0
-
-    def listener_callbackFunction(self, ROS2ImageMessage):
-        frame = self.bridgeObject.imgmsg_to_cv2(ROS2ImageMessage, desired_encoding='bgr8')
-        
-        cv2.imshow('Camera video', frame)
-        cv2.waitKey(1)  # Daha stabil olması için 10 ms beklet
-
-        self.get_logger().info(f'Resim alındı {self.i}')
-        self.i += 1
+        self.subscription  # Önleme amacıyla referans tutuyoruz
+    
+    def lidar_callback(self, msg):
+        self.get_logger().info(f'LIDAR Verisi Alındı: {len(msg.ranges)} nokta')
+        self.get_logger().info(f'Ön: {msg.ranges[len(msg.ranges)//2]} metre')  # Ortadaki veri genellikle ön noktaya karşılık gelir
+        self.get_logger().info(f'__________________________________')  # Ortadaki veri genellikle ön noktaya karşılık gelir
 
 def main(args=None):
     rclpy.init(args=args)
-    
-    subscriberObject = SubscriberNodeClass()
-    
-    rclpy.spin(subscriberObject)
-    
-    subscriberObject.destroy_node()  # Hatalı yazımı düzelttik
-    
-    rclpy.shutdown()  # Hatalı yazımı düzelttik
+    lidar_subscriber = LidarSubscriber()
+    rclpy.spin(lidar_subscriber)
+    lidar_subscriber.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
