@@ -16,6 +16,7 @@ class LidarSubscriber(Node):
     def lidar_callback(self, msg):
         self.get_logger().info(f'LIDAR Verisi Alındı: {len(msg.ranges)} nokta')
         self.get_logger().info(f'Ön: {msg.ranges[len(msg.ranges)//2]} metre')  # Ortadaki veri genellikle ön noktaya karşılık gelir
+        self.get_logger().info(f'__________________________________')  # Ortadaki veri genellikle ön noktaya karşılık gelir
 
 def main(args=None):
     rclpy.init(args=args)

@@ -1,0 +1,3 @@
+Invoking command in '/home/encoder/Desktop/ros2-robot/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/encoder/Desktop/ros2-robot/ros2_ws/src/rplidar_ros -DCMAKE_INSTALL_PREFIX=/home/encoder/Desktop/ros2-robot/install/rplidar_ros
+Invoked command in '/home/encoder/Desktop/ros2-robot/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/encoder/Desktop/ros2-robot/ros2_ws/src/rplidar_ros -DCMAKE_INSTALL_PREFIX=/home/encoder/Desktop/ros2-robot/install/rplidar_ros
+Invoking command in '/home/encoder/Desktop/ros2-robot/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/rplidar_ros -- -j12 -l12

@@ -1,0 +1,76 @@
+[3.268s] Invoking command in '/home/encoder/Desktop/ros2-robot/build/tello_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_description -DCMAKE_INSTALL_PREFIX=/home/encoder/Desktop/ros2-robot/install/tello_description
+[3.495s] -- The C compiler identification is GNU 11.4.0
+[3.956s] -- The CXX compiler identification is GNU 11.4.0
+[3.997s] -- Detecting C compiler ABI info
+[4.311s] -- Detecting C compiler ABI info - done
+[4.366s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.366s] -- Detecting C compile features
+[4.367s] -- Detecting C compile features - done
+[4.395s] -- Detecting CXX compiler ABI info
+[4.791s] -- Detecting CXX compiler ABI info - done
+[4.855s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.859s] -- Detecting CXX compile features
+[4.861s] -- Detecting CXX compile features - done
+[4.885s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.667s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.081s] -- creating rules for /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello.urdf
+[6.083s] -- creating rules for /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_1.urdf
+[6.084s] -- creating rules for /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_2.urdf
+[6.084s] -- creating rules for /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_3.urdf
+[6.084s] -- creating rules for /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_4.urdf
+[6.084s] -- creating rules for /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_5.urdf
+[6.085s] -- creating rules for /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_6.urdf
+[6.086s] -- creating rules for /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_7.urdf
+[6.087s] -- creating rules for /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_8.urdf
+[6.420s] -- Configuring done
+[6.459s] -- Generating done
+[6.479s] -- Build files have been written to: /home/encoder/Desktop/ros2-robot/build/tello_description
+[6.512s] Invoked command in '/home/encoder/Desktop/ros2-robot/build/tello_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_description -DCMAKE_INSTALL_PREFIX=/home/encoder/Desktop/ros2-robot/install/tello_description
+[6.519s] Invoking command in '/home/encoder/Desktop/ros2-robot/build/tello_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/tello_description -- -j12 -l12
+[6.777s] [ 11%] [34m[1mGenerate /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello.urdf[0m
+[6.806s] [ 22%] [34m[1mGenerate /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_2.urdf[0m
+[6.806s] [ 33%] [34m[1mGenerate /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_3.urdf[0m
+[6.807s] [ 44%] [34m[1mGenerate /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_5.urdf[0m
+[6.860s] [ 55%] [34m[1mGenerate /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_1.urdf[0m
+[6.864s] [ 66%] [34m[1mGenerate /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_6.urdf[0m
+[6.874s] [ 77%] [34m[1mGenerate /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_7.urdf[0m
+[6.897s] [ 88%] [34m[1mGenerate /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_4.urdf[0m
+[6.906s] [100%] [34m[1mGenerate /home/encoder/Desktop/ros2-robot/build/tello_description/urdf/tello_8.urdf[0m
+[6.954s] [100%] Built target generate_urdf
+[7.049s] [100%] Built target generate_urdf_3
+[7.068s] [100%] Built target generate_urdf_6
+[7.083s] [100%] Built target generate_urdf_2
+[7.106s] [100%] Built target generate_urdf_8
+[7.108s] [100%] Built target generate_urdf_5
+[7.137s] [100%] Built target generate_urdf_7
+[7.153s] [100%] Built target generate_urdf_4
+[7.163s] [100%] Built target generate_urdf_1
+[7.213s] Invoked command in '/home/encoder/Desktop/ros2-robot/build/tello_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/tello_description -- -j12 -l12
+[7.225s] Invoking command in '/home/encoder/Desktop/ros2-robot/build/tello_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/tello_description
+[7.247s] -- Install configuration: ""
+[7.248s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/urdf
+[7.248s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/urdf/tello_8.urdf
+[7.248s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/urdf/tello_7.urdf
+[7.249s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/urdf/tello_4.urdf
+[7.249s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/urdf/tello_6.urdf
+[7.249s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/urdf/tello.urdf
+[7.250s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/urdf/tello_5.urdf
+[7.250s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/urdf/tello_2.urdf
+[7.251s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/urdf/tello_3.urdf
+[7.255s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/urdf/tello_1.urdf
+[7.255s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/ament_index/resource_index/package_run_dependencies/tello_description
+[7.255s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/ament_index/resource_index/parent_prefix_path/tello_description
+[7.256s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/environment/ament_prefix_path.sh
+[7.256s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/environment/ament_prefix_path.dsv
+[7.256s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/environment/path.sh
+[7.256s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/environment/path.dsv
+[7.259s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/local_setup.bash
+[7.259s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/local_setup.sh
+[7.261s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/local_setup.zsh
+[7.262s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/local_setup.dsv
+[7.263s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/package.dsv
+[7.263s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/ament_index/resource_index/packages/tello_description
+[7.263s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/cmake/tello_descriptionConfig.cmake
+[7.263s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/cmake/tello_descriptionConfig-version.cmake
+[7.264s] -- Installing: /home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/package.xml
+[7.271s] Invoked command in '/home/encoder/Desktop/ros2-robot/build/tello_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/tello_description

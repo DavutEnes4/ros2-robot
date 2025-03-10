@@ -1,0 +1,61 @@
+[1.836s] Invoking command in '/home/encoder/Desktop/ros2-robot/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/rplidar_ros -- -j12 -l12
+[2.572s] [35m[1mConsolidate compiler generated dependencies of target rplidar_client[0m
+[2.572s] [35m[1mConsolidate compiler generated dependencies of target rplidar_node[0m
+[2.572s] [35m[1mConsolidate compiler generated dependencies of target rplidar_composition[0m
+[2.572s] [  5%] Built target rplidar_client
+[2.573s] [ 52%] Built target rplidar_node
+[2.573s] [100%] Built target rplidar_composition
+[2.596s] Invoked command in '/home/encoder/Desktop/ros2-robot/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/rplidar_ros -- -j12 -l12
+[2.604s] Invoking command in '/home/encoder/Desktop/ros2-robot/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/rplidar_ros
+[2.773s] -- Install configuration: ""
+[2.774s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch
+[2.774s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m8_launch.py
+[2.774s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_c1_launch.py
+[2.774s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m8_launch.py
+[2.775s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_t1_launch.py
+[2.775s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2e_launch.py
+[2.775s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s3_launch.py
+[2.780s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_launch.py
+[2.781s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a1_launch.py
+[2.781s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2_launch.py
+[2.781s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_c1_launch.py
+[2.781s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m7_launch.py
+[2.782s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp_launch.py
+[2.782s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2_launch.py
+[2.782s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m7_launch.py
+[2.782s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2e_launch.py
+[2.787s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m12_launch.py
+[2.790s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_t1_launch.py
+[2.791s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_launch.py
+[2.791s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3_launch.py
+[2.792s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp_launch.py
+[2.792s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m12_launch.py
+[2.798s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s3_launch.py
+[2.799s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3_launch.py
+[2.799s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a1_launch.py
+[2.799s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/rviz
+[2.799s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/rviz/rplidar_ros.rviz
+[2.800s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/lib/rplidar_ros/rplidar_node
+[2.800s] -- Set runtime path of "/home/encoder/Desktop/ros2-robot/install/rplidar_ros/lib/rplidar_ros/rplidar_node" to ""
+[2.800s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[2.800s] -- Set runtime path of "/home/encoder/Desktop/ros2-robot/install/rplidar_ros/lib/rplidar_ros/rplidar_composition" to ""
+[2.800s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/lib/rplidar_ros/rplidar_client
+[2.801s] -- Set runtime path of "/home/encoder/Desktop/ros2-robot/install/rplidar_ros/lib/rplidar_ros/rplidar_client" to ""
+[2.801s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[2.805s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[2.806s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[2.806s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[2.807s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[2.807s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[2.807s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[2.807s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[2.807s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[2.808s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[2.808s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/package.dsv
+[2.808s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[2.808s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.808s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.809s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[2.809s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[2.813s] -- Installing: /home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/package.xml
+[2.873s] Invoked command in '/home/encoder/Desktop/ros2-robot/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/rplidar_ros

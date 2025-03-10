@@ -1,0 +1,895 @@
+[0.214s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.214s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a6442009870>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a6442183250>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a6442183250>>, mixin_verb=('build',))
+[0.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.544s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/encoder/Desktop/ros2-robot'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extensions ['ignore', 'ignore_ament_install']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extension 'ignore'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extension 'ignore_ament_install'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extensions ['colcon_pkg']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extension 'colcon_pkg'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extensions ['colcon_meta']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extension 'colcon_meta'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extensions ['ros']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extension 'ros'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extensions ['cmake', 'python']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extension 'cmake'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extension 'python'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extensions ['python_setup_py']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega) by extension 'python_setup_py'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extensions ['ignore', 'ignore_ament_install']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extension 'ignore'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extension 'ignore_ament_install'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extensions ['colcon_pkg']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extension 'colcon_pkg'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extensions ['colcon_meta']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extension 'colcon_meta'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extensions ['ros']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extension 'ros'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extensions ['cmake', 'python']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extension 'cmake'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extension 'python'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extensions ['python_setup_py']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/include) by extension 'python_setup_py'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extension 'ignore'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extension 'ignore_ament_install'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extensions ['colcon_pkg']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extension 'colcon_pkg'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extensions ['colcon_meta']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extension 'colcon_meta'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extensions ['ros']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extension 'ros'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extensions ['cmake', 'python']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extension 'cmake'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extension 'python'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extensions ['python_setup_py']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/lib) by extension 'python_setup_py'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extensions ['ignore', 'ignore_ament_install']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extension 'ignore'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extension 'ignore_ament_install'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extensions ['colcon_pkg']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extension 'colcon_pkg'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extensions ['colcon_meta']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extension 'colcon_meta'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extensions ['ros']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extension 'ros'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extensions ['cmake', 'python']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extension 'cmake'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extension 'python'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extensions ['python_setup_py']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src) by extension 'python_setup_py'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extensions ['ignore', 'ignore_ament_install']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extension 'ignore'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extension 'ignore_ament_install'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extensions ['colcon_pkg']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extension 'colcon_pkg'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extensions ['colcon_meta']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extension 'colcon_meta'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extensions ['ros']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extension 'ros'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extensions ['cmake', 'python']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extension 'cmake'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extension 'python'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extensions ['python_setup_py']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/StepperController) by extension 'python_setup_py'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extensions ['ignore', 'ignore_ament_install']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extension 'ignore'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extension 'ignore_ament_install'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extensions ['colcon_pkg']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extension 'colcon_pkg'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extensions ['colcon_meta']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extension 'colcon_meta'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extensions ['ros']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extension 'ros'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extensions ['cmake', 'python']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extension 'cmake'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extension 'python'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extensions ['python_setup_py']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/mpu9250) by extension 'python_setup_py'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extensions ['ignore', 'ignore_ament_install']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extension 'ignore'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extension 'ignore_ament_install'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extensions ['colcon_pkg']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extension 'colcon_pkg'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extensions ['colcon_meta']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extension 'colcon_meta'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extensions ['ros']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extension 'ros'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extensions ['cmake', 'python']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extension 'cmake'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extension 'python'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extensions ['python_setup_py']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/src/step_motor) by extension 'python_setup_py'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extensions ['ignore', 'ignore_ament_install']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extension 'ignore'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extension 'ignore_ament_install'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extensions ['colcon_pkg']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extension 'colcon_pkg'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extensions ['colcon_meta']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extension 'colcon_meta'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extensions ['ros']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extension 'ros'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extensions ['cmake', 'python']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extension 'cmake'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extension 'python'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extensions ['python_setup_py']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino - Mega/test) by extension 'python_setup_py'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extensions ['ignore', 'ignore_ament_install']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extension 'ignore'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extension 'ignore_ament_install'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extensions ['colcon_pkg']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extension 'colcon_pkg'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extensions ['colcon_meta']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extension 'colcon_meta'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extensions ['ros']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extension 'ros'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extensions ['cmake', 'python']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extension 'cmake'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extension 'python'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extensions ['python_setup_py']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(drone) by extension 'python_setup_py'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore_ament_install'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_pkg']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_pkg'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_meta']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_meta'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ros']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ros'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['cmake', 'python']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'cmake'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['python_setup_py']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python_setup_py'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extension 'ignore'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) ignored
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extension 'ignore'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) ignored
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extension 'ignore'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) ignored
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore_ament_install'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_pkg']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_pkg'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_meta']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_meta'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ros']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ros'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['cmake', 'python']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'cmake'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['python_setup_py']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python_setup_py'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lidar_mapper) by extensions ['ignore', 'ignore_ament_install']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lidar_mapper) by extension 'ignore'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lidar_mapper) by extension 'ignore_ament_install'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lidar_mapper) by extensions ['colcon_pkg']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lidar_mapper) by extension 'colcon_pkg'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lidar_mapper) by extensions ['colcon_meta']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lidar_mapper) by extension 'colcon_meta'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lidar_mapper) by extensions ['ros']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lidar_mapper) by extension 'ros'
+[0.580s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/lidar_mapper' with type 'ros.ament_python' and name 'lidar_mapper'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_opencv) by extension 'ignore'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_opencv) by extension 'ignore_ament_install'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_opencv) by extensions ['colcon_pkg']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_opencv) by extension 'colcon_pkg'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_opencv) by extensions ['colcon_meta']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_opencv) by extension 'colcon_meta'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_opencv) by extensions ['ros']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_opencv) by extension 'ros'
+[0.583s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/ros2_opencv' with type 'ros.ament_python' and name 'ros2_opencv'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_shared) by extensions ['ignore', 'ignore_ament_install']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_shared) by extension 'ignore'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_shared) by extension 'ignore_ament_install'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_shared) by extensions ['colcon_pkg']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_shared) by extension 'colcon_pkg'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_shared) by extensions ['colcon_meta']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_shared) by extension 'colcon_meta'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_shared) by extensions ['ros']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ros2_shared) by extension 'ros'
+[0.584s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/ros2_shared' with type 'ros.ament_cmake' and name 'ros2_shared'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rplidar_ros) by extension 'ignore'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rplidar_ros) by extension 'ignore_ament_install'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rplidar_ros) by extensions ['colcon_pkg']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rplidar_ros) by extension 'colcon_pkg'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rplidar_ros) by extensions ['colcon_meta']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rplidar_ros) by extension 'colcon_meta'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rplidar_ros) by extensions ['ros']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rplidar_ros) by extension 'ros'
+[0.588s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/serial_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/serial_pubsub) by extension 'ignore'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/serial_pubsub) by extension 'ignore_ament_install'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/serial_pubsub) by extensions ['colcon_pkg']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/serial_pubsub) by extension 'colcon_pkg'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/serial_pubsub) by extensions ['colcon_meta']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/serial_pubsub) by extension 'colcon_meta'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/serial_pubsub) by extensions ['ros']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/serial_pubsub) by extension 'ros'
+[0.590s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/serial_pubsub' with type 'ros.ament_python' and name 'serial_pubsub'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extension 'ignore'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extension 'ignore_ament_install'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extensions ['colcon_pkg']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extension 'colcon_pkg'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extensions ['colcon_meta']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extension 'colcon_meta'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extensions ['ros']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extension 'ros'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extensions ['cmake', 'python']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extension 'cmake'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extension 'python'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extensions ['python_setup_py']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros) by extension 'python_setup_py'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_description) by extensions ['ignore', 'ignore_ament_install']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_description) by extension 'ignore'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_description) by extension 'ignore_ament_install'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_description) by extensions ['colcon_pkg']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_description) by extension 'colcon_pkg'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_description) by extensions ['colcon_meta']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_description) by extension 'colcon_meta'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_description) by extensions ['ros']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_description) by extension 'ros'
+[0.592s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/tello_ros/tello_description' with type 'ros.ament_cmake' and name 'tello_description'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_driver) by extension 'ignore'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_driver) by extension 'ignore_ament_install'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_driver) by extensions ['colcon_pkg']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_driver) by extension 'colcon_pkg'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_driver) by extensions ['colcon_meta']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_driver) by extension 'colcon_meta'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_driver) by extensions ['ros']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_driver) by extension 'ros'
+[0.595s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/tello_ros/tello_driver' with type 'ros.ament_cmake' and name 'tello_driver'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_gazebo) by extension 'ignore'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_gazebo) by extension 'ignore_ament_install'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_gazebo) by extensions ['colcon_pkg']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_gazebo) by extension 'colcon_pkg'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_gazebo) by extensions ['colcon_meta']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_gazebo) by extension 'colcon_meta'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_gazebo) by extensions ['ros']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_gazebo) by extension 'ros'
+[0.597s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/tello_ros/tello_gazebo' with type 'ros.ament_cmake' and name 'tello_gazebo'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_msgs) by extension 'ignore'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_msgs) by extension 'ignore_ament_install'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_msgs) by extensions ['colcon_pkg']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_msgs) by extension 'colcon_pkg'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_msgs) by extensions ['colcon_meta']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_msgs) by extension 'colcon_meta'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_msgs) by extensions ['ros']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tello_ros/tello_msgs) by extension 'ros'
+[0.611s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/tello_ros/tello_msgs' with type 'ros.ament_cmake' and name 'tello_msgs'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['ignore', 'ignore_ament_install']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ignore'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ignore_ament_install'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['colcon_pkg']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'colcon_pkg'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['colcon_meta']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'colcon_meta'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['ros']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ros'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['cmake', 'python']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'cmake'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'python'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['python_setup_py']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'python_setup_py'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extensions ['ignore', 'ignore_ament_install']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extension 'ignore'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extension 'ignore_ament_install'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extensions ['colcon_pkg']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extension 'colcon_pkg'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extensions ['colcon_meta']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extension 'colcon_meta'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extensions ['ros']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extension 'ros'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extensions ['cmake', 'python']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extension 'cmake'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extension 'python'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extensions ['python_setup_py']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino) by extension 'python_setup_py'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extensions ['ignore', 'ignore_ament_install']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extension 'ignore'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extension 'ignore_ament_install'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extensions ['colcon_pkg']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extension 'colcon_pkg'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extensions ['colcon_meta']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extension 'colcon_meta'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extensions ['ros']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extension 'ros'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extensions ['cmake', 'python']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extension 'cmake'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extension 'python'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extensions ['python_setup_py']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme) by extension 'python_setup_py'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extensions ['ignore', 'ignore_ament_install']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extension 'ignore'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extension 'ignore_ament_install'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extensions ['colcon_pkg']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extension 'colcon_pkg'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extensions ['colcon_meta']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extension 'colcon_meta'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extensions ['ros']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extension 'ros'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extensions ['cmake', 'python']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extension 'cmake'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extension 'python'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extensions ['python_setup_py']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/haberleşeme/SerialTransfer) by extension 'python_setup_py'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extensions ['ignore', 'ignore_ament_install']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extension 'ignore'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extension 'ignore_ament_install'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extensions ['colcon_pkg']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extension 'colcon_pkg'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extensions ['colcon_meta']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extension 'colcon_meta'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extensions ['ros']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extension 'ros'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extensions ['cmake', 'python']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extension 'cmake'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extension 'python'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extensions ['python_setup_py']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Arduino/hareket) by extension 'python_setup_py'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extensions ['ignore', 'ignore_ament_install']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extension 'ignore'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extension 'ignore_ament_install'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extensions ['colcon_pkg']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extension 'colcon_pkg'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extensions ['colcon_meta']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extension 'colcon_meta'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extensions ['ros']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extension 'ros'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extensions ['cmake', 'python']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extension 'cmake'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extension 'python'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extensions ['python_setup_py']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/Okuma) by extension 'python_setup_py'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extension 'ignore_ament_install'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extensions ['colcon_pkg']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extension 'colcon_pkg'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extensions ['colcon_meta']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extension 'colcon_meta'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extensions ['ros']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extension 'ros'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extensions ['cmake', 'python']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extension 'cmake'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extension 'python'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extensions ['python_setup_py']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/kamera) by extension 'python_setup_py'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extensions ['ignore', 'ignore_ament_install']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extension 'ignore'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extension 'ignore_ament_install'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extensions ['colcon_pkg']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extension 'colcon_pkg'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extensions ['colcon_meta']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extension 'colcon_meta'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extensions ['ros']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extension 'ros'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extensions ['cmake', 'python']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extension 'cmake'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extension 'python'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extensions ['python_setup_py']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test/rehber) by extension 'python_setup_py'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extensions ['ignore', 'ignore_ament_install']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extension 'ignore'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extension 'ignore_ament_install'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extensions ['colcon_pkg']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extension 'colcon_pkg'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extensions ['colcon_meta']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extension 'colcon_meta'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extensions ['ros']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extension 'ros'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extensions ['cmake', 'python']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extension 'cmake'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extension 'python'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extensions ['python_setup_py']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(wifi) by extension 'python_setup_py'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extensions ['ignore', 'ignore_ament_install']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extension 'ignore'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extension 'ignore_ament_install'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extensions ['colcon_pkg']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extension 'colcon_pkg'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extensions ['colcon_meta']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extension 'colcon_meta'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extensions ['ros']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extension 'ros'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extensions ['cmake', 'python']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extension 'cmake'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extension 'python'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extensions ['python_setup_py']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/include) by extension 'python_setup_py'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extension 'ignore'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extension 'ignore_ament_install'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extensions ['colcon_pkg']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extension 'colcon_pkg'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extensions ['colcon_meta']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extension 'colcon_meta'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extensions ['ros']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extension 'ros'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extensions ['cmake', 'python']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extension 'cmake'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extension 'python'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extensions ['python_setup_py']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/lib) by extension 'python_setup_py'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extensions ['ignore', 'ignore_ament_install']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extension 'ignore'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extension 'ignore_ament_install'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extensions ['colcon_pkg']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extension 'colcon_pkg'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extensions ['colcon_meta']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extension 'colcon_meta'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extensions ['ros']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extension 'ros'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extensions ['cmake', 'python']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extension 'cmake'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extension 'python'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extensions ['python_setup_py']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/src) by extension 'python_setup_py'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extensions ['ignore', 'ignore_ament_install']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extension 'ignore'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extension 'ignore_ament_install'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extensions ['colcon_pkg']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extension 'colcon_pkg'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extensions ['colcon_meta']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extension 'colcon_meta'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extensions ['ros']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extension 'ros'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extensions ['cmake', 'python']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extension 'cmake'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extension 'python'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extensions ['python_setup_py']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(wifi/test) by extension 'python_setup_py'
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.656s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.656s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.660s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 318 installed packages in /opt/ros/humble
+[0.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.715s] Level 5:colcon.colcon_core.verb:set package 'lidar_mapper' build argument 'cmake_args' from command line to 'None'
+[0.716s] Level 5:colcon.colcon_core.verb:set package 'lidar_mapper' build argument 'cmake_target' from command line to 'None'
+[0.716s] Level 5:colcon.colcon_core.verb:set package 'lidar_mapper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.716s] Level 5:colcon.colcon_core.verb:set package 'lidar_mapper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.716s] Level 5:colcon.colcon_core.verb:set package 'lidar_mapper' build argument 'cmake_clean_first' from command line to 'False'
+[0.716s] Level 5:colcon.colcon_core.verb:set package 'lidar_mapper' build argument 'cmake_force_configure' from command line to 'False'
+[0.716s] Level 5:colcon.colcon_core.verb:set package 'lidar_mapper' build argument 'ament_cmake_args' from command line to 'None'
+[0.716s] Level 5:colcon.colcon_core.verb:set package 'lidar_mapper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.716s] Level 5:colcon.colcon_core.verb:set package 'lidar_mapper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.716s] DEBUG:colcon.colcon_core.verb:Building package 'lidar_mapper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/build/lidar_mapper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/install/lidar_mapper', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/lidar_mapper', 'symlink_install': False, 'test_result_base': None}
+[0.716s] Level 5:colcon.colcon_core.verb:set package 'ros2_opencv' build argument 'cmake_args' from command line to 'None'
+[0.716s] Level 5:colcon.colcon_core.verb:set package 'ros2_opencv' build argument 'cmake_target' from command line to 'None'
+[0.716s] Level 5:colcon.colcon_core.verb:set package 'ros2_opencv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.716s] Level 5:colcon.colcon_core.verb:set package 'ros2_opencv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_opencv' build argument 'cmake_clean_first' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_opencv' build argument 'cmake_force_configure' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_opencv' build argument 'ament_cmake_args' from command line to 'None'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_opencv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_opencv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.717s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_opencv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/build/ros2_opencv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/install/ros2_opencv', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv', 'symlink_install': False, 'test_result_base': None}
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_args' from command line to 'None'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_target' from command line to 'None'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_clean_cache' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_clean_first' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_force_configure' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'ament_cmake_args' from command line to 'None'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'catkin_cmake_args' from command line to 'None'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.717s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_shared' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/build/ros2_shared', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/install/ros2_shared', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_shared', 'symlink_install': False, 'test_result_base': None}
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.718s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/install/rplidar_ros', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/rplidar_ros', 'symlink_install': False, 'test_result_base': None}
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'serial_pubsub' build argument 'cmake_args' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'serial_pubsub' build argument 'cmake_target' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'serial_pubsub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'serial_pubsub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'serial_pubsub' build argument 'cmake_clean_first' from command line to 'False'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'serial_pubsub' build argument 'cmake_force_configure' from command line to 'False'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'serial_pubsub' build argument 'ament_cmake_args' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'serial_pubsub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'serial_pubsub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.719s] DEBUG:colcon.colcon_core.verb:Building package 'serial_pubsub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/build/serial_pubsub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/install/serial_pubsub', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/serial_pubsub', 'symlink_install': False, 'test_result_base': None}
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_args' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_target' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.720s] DEBUG:colcon.colcon_core.verb:Building package 'tello_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/build/tello_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/install/tello_description', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_description', 'symlink_install': False, 'test_result_base': None}
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_target' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.720s] DEBUG:colcon.colcon_core.verb:Building package 'tello_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/build/tello_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/install/tello_msgs', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_target' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.721s] DEBUG:colcon.colcon_core.verb:Building package 'tello_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/build/tello_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/install/tello_driver', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_driver', 'symlink_install': False, 'test_result_base': None}
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.722s] DEBUG:colcon.colcon_core.verb:Building package 'tello_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/build/tello_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/install/tello_gazebo', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.722s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.724s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.724s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_msgs' with build type 'ament_cmake'
+[0.724s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_msgs'
+[0.728s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.728s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.728s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.733s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_shared' with build type 'ament_cmake'
+[0.733s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_shared'
+[0.734s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.734s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.739s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/lidar_mapper' with build type 'ament_python'
+[0.739s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_mapper', 'ament_prefix_path')
+[0.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/share/lidar_mapper/hook/ament_prefix_path.ps1'
+[0.740s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/share/lidar_mapper/hook/ament_prefix_path.dsv'
+[0.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/share/lidar_mapper/hook/ament_prefix_path.sh'
+[0.743s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.743s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.749s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv' with build type 'ament_python'
+[0.750s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_opencv', 'ament_prefix_path')
+[0.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/share/ros2_opencv/hook/ament_prefix_path.ps1'
+[0.753s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/share/ros2_opencv/hook/ament_prefix_path.dsv'
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/share/ros2_opencv/hook/ament_prefix_path.sh'
+[0.758s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.758s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.769s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/rplidar_ros' with build type 'ament_cmake'
+[0.770s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/rplidar_ros'
+[0.771s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.772s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.781s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/serial_pubsub' with build type 'ament_python'
+[0.782s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_pubsub', 'ament_prefix_path')
+[0.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/share/serial_pubsub/hook/ament_prefix_path.ps1'
+[0.785s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/share/serial_pubsub/hook/ament_prefix_path.dsv'
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/share/serial_pubsub/hook/ament_prefix_path.sh'
+[0.790s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.790s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.798s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_description' with build type 'ament_cmake'
+[0.799s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_description'
+[0.799s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.799s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/build/tello_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/tello_msgs -- -j12 -l12
+[0.854s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/ros2_shared -- -j12 -l12
+[1.885s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/lidar_mapper'
+[1.886s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.886s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.578s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv'
+[2.579s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.580s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/rplidar_ros -- -j12 -l12
+[3.296s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/serial_pubsub'
+[3.297s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.297s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/build/tello_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/tello_description -- -j12 -l12
+[3.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/encoder/Desktop/ros2-robot/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/ros2_shared -- -j12 -l12
+[3.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/ros2_shared
+[3.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/encoder/Desktop/ros2-robot/build/tello_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/tello_msgs -- -j12 -l12
+[3.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/build/tello_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/tello_msgs
+[3.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/encoder/Desktop/ros2-robot/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/rplidar_ros -- -j12 -l12
+[3.375s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/rplidar_ros
+[3.513s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_shared)
+[3.539s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_shared' for CMake module files
+[3.547s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_shared' for CMake config files
+[3.548s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_shared', 'cmake_prefix_path')
+[3.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.ps1'
+[3.555s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.dsv'
+[3.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.sh'
+[3.564s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_shared/bin'
+[3.565s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_shared/lib/pkgconfig/ros2_shared.pc'
+[3.566s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_shared/lib/python3.10/site-packages'
+[3.568s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_shared/bin'
+[3.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/package.ps1'
+[3.580s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/package.dsv'
+[3.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/encoder/Desktop/ros2-robot/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/ros2_shared
+[3.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/package.sh'
+[3.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/package.bash'
+[3.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/package.zsh'
+[3.598s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/colcon-core/packages/ros2_shared)
+[3.601s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_shared)
+[3.602s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_shared' for CMake module files
+[3.604s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_shared' for CMake config files
+[3.605s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_shared', 'cmake_prefix_path')
+[3.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.ps1'
+[3.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.dsv'
+[3.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.sh'
+[3.615s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_shared/bin'
+[3.615s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_shared/lib/pkgconfig/ros2_shared.pc'
+[3.616s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_shared/lib/python3.10/site-packages'
+[3.617s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_shared/bin'
+[3.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/package.ps1'
+[3.621s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/package.dsv'
+[3.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/package.sh'
+[3.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/package.bash'
+[3.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/package.zsh'
+[3.631s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/install/ros2_shared/share/colcon-core/packages/ros2_shared)
+[3.633s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[3.634s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros' for CMake module files
+[3.639s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros' for CMake config files
+[3.640s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[3.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[3.644s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/encoder/Desktop/ros2-robot/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/rplidar_ros
+[3.653s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[3.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[3.662s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/lib'
+[3.663s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/bin'
+[3.663s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[3.665s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/lib/python3.10/site-packages'
+[3.666s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/bin'
+[3.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[3.675s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[3.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/package.sh'
+[3.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/package.bash'
+[3.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[3.681s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[3.684s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[3.685s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros' for CMake module files
+[3.687s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros' for CMake config files
+[3.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[3.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[3.691s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[3.692s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[3.694s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/lib'
+[3.694s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/bin'
+[3.695s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[3.696s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/lib/python3.10/site-packages'
+[3.697s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/bin'
+[3.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[3.700s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[3.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/package.sh'
+[3.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/package.bash'
+[3.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[3.706s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[3.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/encoder/Desktop/ros2-robot/build/tello_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/tello_description -- -j12 -l12
+[3.718s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_msgs)
+[3.719s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/build/tello_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/tello_description
+[3.720s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs' for CMake module files
+[3.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/encoder/Desktop/ros2-robot/build/tello_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/tello_msgs
+[3.724s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs' for CMake config files
+[3.725s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'cmake_prefix_path')
+[3.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.ps1'
+[3.727s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.dsv'
+[3.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.sh'
+[3.730s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs/lib'
+[3.731s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'ld_library_path_lib')
+[3.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.ps1'
+[3.733s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.dsv'
+[3.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.sh'
+[3.735s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs/bin'
+[3.736s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs/lib/pkgconfig/tello_msgs.pc'
+[3.736s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs/lib/python3.10/site-packages'
+[3.737s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs/bin'
+[3.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/package.ps1'
+[3.740s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/package.dsv'
+[3.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/package.sh'
+[3.743s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/package.bash'
+[3.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/package.zsh'
+[3.746s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/colcon-core/packages/tello_msgs)
+[3.748s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_msgs)
+[3.749s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs' for CMake module files
+[3.751s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs' for CMake config files
+[3.751s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'cmake_prefix_path')
+[3.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.ps1'
+[3.754s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.dsv'
+[3.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.sh'
+[3.757s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs/lib'
+[3.757s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'ld_library_path_lib')
+[3.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.ps1'
+[3.759s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.dsv'
+[3.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.sh'
+[3.762s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs/bin'
+[3.763s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs/lib/pkgconfig/tello_msgs.pc'
+[3.763s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs/lib/python3.10/site-packages'
+[3.764s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_msgs/bin'
+[3.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/package.ps1'
+[3.767s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/package.dsv'
+[3.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/package.sh'
+[3.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/package.bash'
+[3.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/tello_msgs/package.zsh'
+[3.773s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/install/tello_msgs/share/colcon-core/packages/tello_msgs)
+[3.775s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_driver' with build type 'ament_cmake'
+[3.776s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_driver'
+[3.777s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.777s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.800s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_gazebo' with build type 'ament_cmake'
+[3.801s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros/tello_gazebo'
+[3.802s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.803s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.816s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_description)
+[3.818s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_description' for CMake module files
+[3.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/encoder/Desktop/ros2-robot/build/tello_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/tello_description
+[3.822s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_description' for CMake config files
+[3.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_description', 'cmake_prefix_path')
+[3.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/hook/cmake_prefix_path.ps1'
+[3.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/hook/cmake_prefix_path.dsv'
+[3.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/hook/cmake_prefix_path.sh'
+[3.830s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_description/bin'
+[3.830s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_description/lib/pkgconfig/tello_description.pc'
+[3.831s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_description/lib/python3.10/site-packages'
+[3.832s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_description/bin'
+[3.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/package.ps1'
+[3.835s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/package.dsv'
+[3.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/package.sh'
+[3.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/package.bash'
+[3.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/package.zsh'
+[3.841s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/install/tello_description/share/colcon-core/packages/tello_description)
+[3.843s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_description)
+[3.844s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_description' for CMake module files
+[3.845s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_description' for CMake config files
+[3.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_description', 'cmake_prefix_path')
+[3.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/hook/cmake_prefix_path.ps1'
+[3.848s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/hook/cmake_prefix_path.dsv'
+[3.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/hook/cmake_prefix_path.sh'
+[3.852s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_description/bin'
+[3.852s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_description/lib/pkgconfig/tello_description.pc'
+[3.853s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_description/lib/python3.10/site-packages'
+[3.853s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_description/bin'
+[3.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/package.ps1'
+[3.858s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/package.dsv'
+[3.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/package.sh'
+[3.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/package.bash'
+[3.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_description/share/tello_description/package.zsh'
+[3.867s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/install/tello_description/share/colcon-core/packages/tello_description)
+[3.880s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/build/tello_driver': AMENT_PREFIX_PATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs:/home/encoder/Desktop/ros2-robot/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs:/home/encoder/Desktop/ros2-robot/install/ros2_shared:/opt/ros/humble LD_LIBRARY_PATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/tello_driver -- -j12 -l12
+[3.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/build/tello_gazebo': AMENT_PREFIX_PATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/tello_gazebo -- -j12 -l12
+[4.806s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/lidar_mapper': PYTHONPATH=/home/encoder/Desktop/ros2-robot/build/lidar_mapper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/install/lidar_mapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lidar_mapper build --build-base /home/encoder/Desktop/ros2-robot/build/lidar_mapper/build install --record /home/encoder/Desktop/ros2-robot/build/lidar_mapper/install.log --single-version-externally-managed install_data
+[5.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv': PYTHONPATH=/home/encoder/Desktop/ros2-robot/build/ros2_opencv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/install/ros2_opencv/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros2_opencv build --build-base /home/encoder/Desktop/ros2-robot/build/ros2_opencv/build install --record /home/encoder/Desktop/ros2-robot/build/ros2_opencv/install.log --single-version-externally-managed install_data
+[5.631s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/serial_pubsub': PYTHONPATH=/home/encoder/Desktop/ros2-robot/build/serial_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/install/serial_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/serial_pubsub build --build-base /home/encoder/Desktop/ros2-robot/build/serial_pubsub/build install --record /home/encoder/Desktop/ros2-robot/build/serial_pubsub/install.log --single-version-externally-managed install_data
+[6.919s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/serial_pubsub' for CMake module files
+[6.923s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/serial_pubsub' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/build/serial_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/install/serial_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/serial_pubsub build --build-base /home/encoder/Desktop/ros2-robot/build/serial_pubsub/build install --record /home/encoder/Desktop/ros2-robot/build/serial_pubsub/install.log --single-version-externally-managed install_data
+[6.932s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/serial_pubsub' for CMake config files
+[6.940s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/lib'
+[6.941s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/bin'
+[6.950s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/lib/pkgconfig/serial_pubsub.pc'
+[6.951s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/lib/python3.10/site-packages'
+[6.951s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_pubsub', 'pythonpath')
+[6.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/share/serial_pubsub/hook/pythonpath.ps1'
+[6.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/share/serial_pubsub/hook/pythonpath.dsv'
+[6.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/share/serial_pubsub/hook/pythonpath.sh'
+[6.980s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/bin'
+[6.993s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_pubsub)
+[6.996s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/share/serial_pubsub/package.ps1'
+[7.015s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/share/serial_pubsub/package.dsv'
+[7.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/share/serial_pubsub/package.sh'
+[7.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/share/serial_pubsub/package.bash'
+[7.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/serial_pubsub/share/serial_pubsub/package.zsh'
+[7.073s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/install/serial_pubsub/share/colcon-core/packages/serial_pubsub)
+[8.813s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/lidar_mapper' for CMake module files
+[8.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/lidar_mapper' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/build/lidar_mapper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/install/lidar_mapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lidar_mapper build --build-base /home/encoder/Desktop/ros2-robot/build/lidar_mapper/build install --record /home/encoder/Desktop/ros2-robot/build/lidar_mapper/install.log --single-version-externally-managed install_data
+[8.824s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/lidar_mapper' for CMake config files
+[8.831s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/lib'
+[8.832s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/bin'
+[8.843s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/lib/pkgconfig/lidar_mapper.pc'
+[8.849s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/lib/python3.10/site-packages'
+[8.849s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_mapper', 'pythonpath')
+[8.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/share/lidar_mapper/hook/pythonpath.ps1'
+[8.865s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/share/lidar_mapper/hook/pythonpath.dsv'
+[8.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/share/lidar_mapper/hook/pythonpath.sh'
+[8.895s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/bin'
+[8.901s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar_mapper)
+[8.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/share/lidar_mapper/package.ps1'
+[8.916s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/share/lidar_mapper/package.dsv'
+[8.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/share/lidar_mapper/package.sh'
+[8.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/share/lidar_mapper/package.bash'
+[8.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/share/lidar_mapper/package.zsh'
+[8.970s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/install/lidar_mapper/share/colcon-core/packages/lidar_mapper)
+[9.292s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_opencv' for CMake module files
+[9.298s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_opencv' for CMake config files
+[9.305s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/build/ros2_opencv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/install/ros2_opencv/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros2_opencv build --build-base /home/encoder/Desktop/ros2-robot/build/ros2_opencv/build install --record /home/encoder/Desktop/ros2-robot/build/ros2_opencv/install.log --single-version-externally-managed install_data
+[9.306s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/lib'
+[9.306s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/bin'
+[9.307s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/lib/pkgconfig/ros2_opencv.pc'
+[9.313s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/lib/python3.10/site-packages'
+[9.323s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_opencv', 'pythonpath')
+[9.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/share/ros2_opencv/hook/pythonpath.ps1'
+[9.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/share/ros2_opencv/hook/pythonpath.dsv'
+[9.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/share/ros2_opencv/hook/pythonpath.sh'
+[9.381s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/bin'
+[9.385s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_opencv)
+[9.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/share/ros2_opencv/package.ps1'
+[9.397s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/share/ros2_opencv/package.dsv'
+[9.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/share/ros2_opencv/package.sh'
+[9.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/share/ros2_opencv/package.bash'
+[9.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/ros2_opencv/share/ros2_opencv/package.zsh'
+[9.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/install/ros2_opencv/share/colcon-core/packages/ros2_opencv)
+[42.169s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/encoder/Desktop/ros2-robot/build/tello_driver' returned '2': AMENT_PREFIX_PATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs:/home/encoder/Desktop/ros2-robot/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs:/home/encoder/Desktop/ros2-robot/install/ros2_shared:/opt/ros/humble LD_LIBRARY_PATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/tello_driver -- -j12 -l12
+[42.172s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_driver)
+[42.173s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_driver' for CMake module files
+[42.174s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_driver' for CMake config files
+[42.176s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_driver/bin'
+[42.176s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_driver/lib/pkgconfig/tello_driver.pc'
+[42.177s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_driver/lib/python3.10/site-packages'
+[42.178s] Level 1:colcon.colcon_core.environment:checking '/home/encoder/Desktop/ros2-robot/install/tello_driver/bin'
+[42.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_driver/share/tello_driver/package.ps1'
+[42.182s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/encoder/Desktop/ros2-robot/install/tello_driver/share/tello_driver/package.dsv'
+[42.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_driver/share/tello_driver/package.sh'
+[42.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_driver/share/tello_driver/package.bash'
+[42.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/encoder/Desktop/ros2-robot/install/tello_driver/share/tello_driver/package.zsh'
+[42.190s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/install/tello_driver/share/colcon-core/packages/tello_driver)
+[86.901s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[86.903s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[86.903s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[86.903s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[86.916s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[86.916s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[86.916s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[86.969s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[86.970s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/encoder/Desktop/ros2-robot/install/local_setup.ps1'
+[86.974s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/encoder/Desktop/ros2-robot/install/_local_setup_util_ps1.py'
+[86.979s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/encoder/Desktop/ros2-robot/install/setup.ps1'
+[86.982s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/encoder/Desktop/ros2-robot/install/local_setup.sh'
+[86.984s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/encoder/Desktop/ros2-robot/install/_local_setup_util_sh.py'
+[86.986s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/encoder/Desktop/ros2-robot/install/setup.sh'
+[86.989s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/encoder/Desktop/ros2-robot/install/local_setup.bash'
+[86.992s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/encoder/Desktop/ros2-robot/install/setup.bash'
+[86.995s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/encoder/Desktop/ros2-robot/install/local_setup.zsh'
+[86.996s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/encoder/Desktop/ros2-robot/install/setup.zsh'

@@ -36,29 +36,28 @@ class ControllerPublisher(Node):
 
                         # X ekseni
                         if event.axis == 0:
-                            x_axis = round(event.value * 100, 2)
+                            x_axis = round(event.value,2)
+                             #round(event.value * 100, 2)
 
                         # Y ekseni
                         elif event.axis == 1:
-                            y_axis = round(event.value * 100, 2)
+                            y_axis = round(event.value,2) 
+                             #round(event.value * 100, 2)
 
                         # Verilerin yayımlanması için koşullar
                         current_time = time.time()
                         time_diff = current_time - self.last_publish_time
 
                         # Gönderme sıklığı ve yakınlık kontrolü
-                        if (
-                            (x_axis is not None and abs(x_axis - (self.last_x or 0)) > 5)
-                            or (y_axis is not None and abs(y_axis - (self.last_y or 0)) > 5)
-                        ) and time_diff >= 0.1:  # 100ms
-                            msg = String()
-                            msg.data = f"{x_axis},{y_axis}\n"
-                            self.publisher_.publish(msg)
-                            self.get_logger().info(f"Publishing: {msg.data}")
+  
+                        msg = String()
+                        msg.data = f"{x_axis},{y_axis}\n"
+                        self.publisher_.publish(msg)
+                        self.get_logger().info(f"Publishing: {msg.data}")
 
-                            # Durum güncellemeleri
-                            self.last_publish_time = current_time
-                            self.last_x, self.last_y = x_axis, y_axis
+                        # Durum güncellemeleri
+                        self.last_publish_time = current_time
+                        self.last_x, self.last_y = x_axis, y_axis
 
         except KeyboardInterrupt:
             self.get_logger().info("Exiting...")

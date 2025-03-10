@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tello_msgs__py",
+		"source" : "/home/encoder/Desktop/ros2-robot/build/tello_msgs/tello_msgs__py"
+	}
+}

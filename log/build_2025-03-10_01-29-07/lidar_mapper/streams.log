@@ -1,0 +1,21 @@
+[4.645s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/lidar_mapper': PYTHONPATH=/home/encoder/Desktop/ros2-robot/build/lidar_mapper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/install/lidar_mapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lidar_mapper build --build-base /home/encoder/Desktop/ros2-robot/build/lidar_mapper/build install --record /home/encoder/Desktop/ros2-robot/build/lidar_mapper/install.log --single-version-externally-managed install_data
+[5.789s] running egg_info
+[5.796s] writing ../../../build/lidar_mapper/lidar_mapper.egg-info/PKG-INFO
+[5.796s] writing dependency_links to ../../../build/lidar_mapper/lidar_mapper.egg-info/dependency_links.txt
+[5.799s] writing entry points to ../../../build/lidar_mapper/lidar_mapper.egg-info/entry_points.txt
+[5.802s] writing requirements to ../../../build/lidar_mapper/lidar_mapper.egg-info/requires.txt
+[5.802s] writing top-level names to ../../../build/lidar_mapper/lidar_mapper.egg-info/top_level.txt
+[5.807s] reading manifest file '../../../build/lidar_mapper/lidar_mapper.egg-info/SOURCES.txt'
+[5.815s] writing manifest file '../../../build/lidar_mapper/lidar_mapper.egg-info/SOURCES.txt'
+[5.815s] running build
+[5.816s] running build_py
+[5.816s] running install
+[5.817s] running install_lib
+[5.820s] running install_data
+[5.820s] running install_egg_info
+[5.821s] removing '/home/encoder/Desktop/ros2-robot/install/lidar_mapper/lib/python3.10/site-packages/lidar_mapper-0.0.0-py3.10.egg-info' (and everything under it)
+[5.822s] Copying ../../../build/lidar_mapper/lidar_mapper.egg-info to /home/encoder/Desktop/ros2-robot/install/lidar_mapper/lib/python3.10/site-packages/lidar_mapper-0.0.0-py3.10.egg-info
+[5.822s] running install_scripts
+[5.900s] Installing subcriber_lidar script to /home/encoder/Desktop/ros2-robot/install/lidar_mapper/lib/lidar_mapper
+[5.902s] writing list of installed files to '/home/encoder/Desktop/ros2-robot/build/lidar_mapper/install.log'
+[5.996s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/lidar_mapper' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/build/lidar_mapper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/install/lidar_mapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lidar_mapper build --build-base /home/encoder/Desktop/ros2-robot/build/lidar_mapper/build install --record /home/encoder/Desktop/ros2-robot/build/lidar_mapper/install.log --single-version-externally-managed install_data

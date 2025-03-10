@@ -1,0 +1,30 @@
+[3.987s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros2': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_ros2 build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/install.log --single-version-externally-managed install_data
+[4.890s] running egg_info
+[4.892s] writing ../../build/tello_ros2/tello_ros2.egg-info/PKG-INFO
+[4.893s] writing dependency_links to ../../build/tello_ros2/tello_ros2.egg-info/dependency_links.txt
+[4.894s] writing entry points to ../../build/tello_ros2/tello_ros2.egg-info/entry_points.txt
+[4.894s] writing requirements to ../../build/tello_ros2/tello_ros2.egg-info/requires.txt
+[4.894s] writing top-level names to ../../build/tello_ros2/tello_ros2.egg-info/top_level.txt
+[4.900s] reading manifest file '../../build/tello_ros2/tello_ros2.egg-info/SOURCES.txt'
+[4.903s] writing manifest file '../../build/tello_ros2/tello_ros2.egg-info/SOURCES.txt'
+[4.904s] running build
+[4.904s] running build_py
+[4.904s] copying tello_ros2/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/build/lib/tello_ros2
+[4.905s] copying tello_ros2/tello_node.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/build/lib/tello_ros2
+[4.906s] running install
+[4.908s] running install_lib
+[4.911s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/build/lib/tello_ros2/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages/tello_ros2
+[4.911s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/build/lib/tello_ros2/tello_node.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages/tello_ros2
+[4.911s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages/tello_ros2/__init__.py to __init__.cpython-310.pyc
+[4.913s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages/tello_ros2/tello_node.py to tello_node.cpython-310.pyc
+[4.918s] running install_data
+[4.919s] copying resource/tello_ros2 -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/ament_index/resource_index/packages
+[4.920s] copying package.xml -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2
+[4.920s] copying launch/tello_node.launch.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2/launch
+[4.920s] running install_egg_info
+[4.925s] removing '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages/tello_ros2-0.1.0-py3.10.egg-info' (and everything under it)
+[4.927s] Copying ../../build/tello_ros2/tello_ros2.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages/tello_ros2-0.1.0-py3.10.egg-info
+[4.930s] running install_scripts
+[5.015s] Installing tello_node script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/tello_ros2
+[5.016s] writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/install.log'
+[5.133s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros2' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_ros2 build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/install.log --single-version-externally-managed install_data

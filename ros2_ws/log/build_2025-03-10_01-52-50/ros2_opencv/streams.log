@@ -1,0 +1,44 @@
+[5.171s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_opencv build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/install.log --single-version-externally-managed install_data
+[6.276s] running egg_info
+[6.281s] creating ../../build/ros2_opencv/ros2_opencv.egg-info
+[6.282s] writing ../../build/ros2_opencv/ros2_opencv.egg-info/PKG-INFO
+[6.282s] writing dependency_links to ../../build/ros2_opencv/ros2_opencv.egg-info/dependency_links.txt
+[6.285s] writing entry points to ../../build/ros2_opencv/ros2_opencv.egg-info/entry_points.txt
+[6.286s] writing requirements to ../../build/ros2_opencv/ros2_opencv.egg-info/requires.txt
+[6.286s] writing top-level names to ../../build/ros2_opencv/ros2_opencv.egg-info/top_level.txt
+[6.286s] writing manifest file '../../build/ros2_opencv/ros2_opencv.egg-info/SOURCES.txt'
+[6.295s] reading manifest file '../../build/ros2_opencv/ros2_opencv.egg-info/SOURCES.txt'
+[6.300s] writing manifest file '../../build/ros2_opencv/ros2_opencv.egg-info/SOURCES.txt'
+[6.301s] running build
+[6.301s] running build_py
+[6.306s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build
+[6.306s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build/lib
+[6.307s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build/lib/ros2_opencv
+[6.308s] copying ros2_opencv/subcriberImage copy.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build/lib/ros2_opencv
+[6.308s] copying ros2_opencv/subcriberImage.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build/lib/ros2_opencv
+[6.308s] copying ros2_opencv/cameraPublisher.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build/lib/ros2_opencv
+[6.309s] copying ros2_opencv/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build/lib/ros2_opencv
+[6.309s] running install
+[6.313s] running install_lib
+[6.314s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages/ros2_opencv
+[6.314s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build/lib/ros2_opencv/subcriberImage copy.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages/ros2_opencv
+[6.317s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build/lib/ros2_opencv/subcriberImage.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages/ros2_opencv
+[6.318s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build/lib/ros2_opencv/cameraPublisher.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages/ros2_opencv
+[6.318s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build/lib/ros2_opencv/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages/ros2_opencv
+[6.318s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages/ros2_opencv/subcriberImage copy.py to subcriberImage copy.cpython-310.pyc
+[6.324s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages/ros2_opencv/subcriberImage.py to subcriberImage.cpython-310.pyc
+[6.324s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages/ros2_opencv/cameraPublisher.py to cameraPublisher.cpython-310.pyc
+[6.329s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages/ros2_opencv/__init__.py to __init__.cpython-310.pyc
+[6.330s] running install_data
+[6.331s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ament_index
+[6.331s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ament_index/resource_index
+[6.331s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ament_index/resource_index/packages
+[6.332s] copying resource/ros2_opencv -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ament_index/resource_index/packages
+[6.333s] copying package.xml -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ros2_opencv
+[6.334s] running install_egg_info
+[6.342s] Copying ../../build/ros2_opencv/ros2_opencv.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages/ros2_opencv-0.0.0-py3.10.egg-info
+[6.348s] running install_scripts
+[6.460s] Installing publisher_node script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/ros2_opencv
+[6.461s] Installing subcriber_node script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/ros2_opencv
+[6.461s] writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/install.log'
+[6.595s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_opencv build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/install.log --single-version-externally-managed install_data

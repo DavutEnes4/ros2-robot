@@ -31,7 +31,7 @@ class PublisherNodeClass(Node):
             return
 
         try:
-            frame = cv2.resize(frame, (820, 640), interpolation=cv2.INTER_CUBIC)
+            frame = cv2.resize(frame, (640, 480), interpolation=cv2.INTER_CUBIC)
             ROS2ImageMessage = self.bridgeObject.cv2_to_imgmsg(frame, encoding="bgr8")
             self.publisher.publish(ROS2ImageMessage)
             self.get_logger().info(f'Resim paylaşıldı: {self.i}')

@@ -1,0 +1,28 @@
+[0.170s] Invoking command in '/home/encoder/Desktop/ros2-robot/build/ros2_shared': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv:/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper:/home/encoder/Desktop/ros2-robot/install/serial_pubsub:/home/encoder/Desktop/ros2-robot/install/ros2_opencv:/home/encoder/Desktop/ros2-robot/install/lidar_mapper:/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/ros2_shared -- -j12 -l12
+[2.903s] Invoked command in '/home/encoder/Desktop/ros2-robot/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv:/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper:/home/encoder/Desktop/ros2-robot/install/serial_pubsub:/home/encoder/Desktop/ros2-robot/install/ros2_opencv:/home/encoder/Desktop/ros2-robot/install/lidar_mapper:/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/ros2_shared -- -j12 -l12
+[2.908s] Invoking command in '/home/encoder/Desktop/ros2-robot/build/ros2_shared': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv:/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper:/home/encoder/Desktop/ros2-robot/install/serial_pubsub:/home/encoder/Desktop/ros2-robot/install/ros2_opencv:/home/encoder/Desktop/ros2-robot/install/lidar_mapper:/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/ros2_shared
+[3.077s] -- Install configuration: ""
+[3.077s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/include
+[3.078s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/include/ros2_shared
+[3.078s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/include/ros2_shared/context_macros.hpp
+[3.078s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/include/ros2_shared/string_printf.hpp
+[3.079s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/include/ros2_shared/param_macros.hpp
+[3.080s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ament_index/resource_index/package_run_dependencies/ros2_shared
+[3.080s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ament_index/resource_index/parent_prefix_path/ros2_shared
+[3.080s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/environment/ament_prefix_path.sh
+[3.080s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/environment/ament_prefix_path.dsv
+[3.080s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/environment/path.sh
+[3.080s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/environment/path.dsv
+[3.081s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/local_setup.bash
+[3.081s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/local_setup.sh
+[3.081s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/local_setup.zsh
+[3.081s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/local_setup.dsv
+[3.081s] -- Installing: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/package.dsv
+[3.082s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ament_index/resource_index/packages/ros2_shared
+[3.082s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake
+[3.082s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/cmake/ament_cmake_export_targets-extras.cmake
+[3.082s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.082s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/cmake/ros2_sharedConfig.cmake
+[3.091s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/cmake/ros2_sharedConfig-version.cmake
+[3.092s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/install/ros2_shared/share/ros2_shared/package.xml
+[3.092s] Invoked command in '/home/encoder/Desktop/ros2-robot/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv:/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper:/home/encoder/Desktop/ros2-robot/install/serial_pubsub:/home/encoder/Desktop/ros2-robot/install/ros2_opencv:/home/encoder/Desktop/ros2-robot/install/lidar_mapper:/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/ros2_shared

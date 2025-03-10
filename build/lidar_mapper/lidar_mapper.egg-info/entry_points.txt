@@ -1,0 +1,3 @@
+[console_scripts]
+subcriber_lidar = lidar_mapper.lidar_mapper:main
+
