@@ -1,0 +1,28 @@
+[3.789s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2:/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv:/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch:/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper:/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared -- -j12 -l12
+[7.238s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2:/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv:/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch:/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper:/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared -- -j12 -l12
+[7.246s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2:/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv:/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch:/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper:/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared
+[7.335s] -- Install configuration: ""
+[7.335s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/include
+[7.336s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/include/ros2_shared
+[7.336s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/include/ros2_shared/context_macros.hpp
+[7.337s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/include/ros2_shared/string_printf.hpp
+[7.337s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/include/ros2_shared/param_macros.hpp
+[7.340s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ament_index/resource_index/package_run_dependencies/ros2_shared
+[7.342s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ament_index/resource_index/parent_prefix_path/ros2_shared
+[7.343s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/environment/ament_prefix_path.sh
+[7.343s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/environment/ament_prefix_path.dsv
+[7.344s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/environment/path.sh
+[7.345s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/environment/path.dsv
+[7.346s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/local_setup.bash
+[7.347s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/local_setup.sh
+[7.347s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/local_setup.zsh
+[7.347s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/local_setup.dsv
+[7.353s] -- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.dsv
+[7.354s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ament_index/resource_index/packages/ros2_shared
+[7.354s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake
+[7.355s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/cmake/ament_cmake_export_targets-extras.cmake
+[7.355s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.356s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/cmake/ros2_sharedConfig.cmake
+[7.356s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/cmake/ros2_sharedConfig-version.cmake
+[7.367s] -- Up-to-date: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.xml
+[7.428s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2:/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv:/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch:/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper:/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared

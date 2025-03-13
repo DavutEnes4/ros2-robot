@@ -1,0 +1,21 @@
+[5.716s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros2': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_ros2 build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/install.log --single-version-externally-managed install_data
+[7.121s] running egg_info
+[7.122s] writing ../../build/tello_ros2/tello_ros2.egg-info/PKG-INFO
+[7.125s] writing dependency_links to ../../build/tello_ros2/tello_ros2.egg-info/dependency_links.txt
+[7.127s] writing entry points to ../../build/tello_ros2/tello_ros2.egg-info/entry_points.txt
+[7.127s] writing requirements to ../../build/tello_ros2/tello_ros2.egg-info/requires.txt
+[7.128s] writing top-level names to ../../build/tello_ros2/tello_ros2.egg-info/top_level.txt
+[7.134s] reading manifest file '../../build/tello_ros2/tello_ros2.egg-info/SOURCES.txt'
+[7.141s] writing manifest file '../../build/tello_ros2/tello_ros2.egg-info/SOURCES.txt'
+[7.141s] running build
+[7.141s] running build_py
+[7.147s] running install
+[7.147s] running install_lib
+[7.152s] running install_data
+[7.152s] running install_egg_info
+[7.158s] removing '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages/tello_ros2-0.1.0-py3.10.egg-info' (and everything under it)
+[7.159s] Copying ../../build/tello_ros2/tello_ros2.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages/tello_ros2-0.1.0-py3.10.egg-info
+[7.168s] running install_scripts
+[7.317s] Installing tello_node script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/tello_ros2
+[7.324s] writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/install.log'
+[7.479s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros2' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_ros2 build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/install.log --single-version-externally-managed install_data

@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/lidar_mapper/lidar_mapper.egg-info/PKG-INFO
+writing dependency_links to ../../build/lidar_mapper/lidar_mapper.egg-info/dependency_links.txt
+writing entry points to ../../build/lidar_mapper/lidar_mapper.egg-info/entry_points.txt
+writing requirements to ../../build/lidar_mapper/lidar_mapper.egg-info/requires.txt
+writing top-level names to ../../build/lidar_mapper/lidar_mapper.egg-info/top_level.txt
+reading manifest file '../../build/lidar_mapper/lidar_mapper.egg-info/SOURCES.txt'
+writing manifest file '../../build/lidar_mapper/lidar_mapper.egg-info/SOURCES.txt'
+running build
+running build_py
+copying lidar_mapper/lidar_mapper.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/lidar_mapper/build/lib/lidar_mapper
+running install
+running install_lib
+copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/lidar_mapper/build/lib/lidar_mapper/lidar_mapper.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/lib/python3.10/site-packages/lidar_mapper
+byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/lib/python3.10/site-packages/lidar_mapper/lidar_mapper.py to lidar_mapper.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/lib/python3.10/site-packages/lidar_mapper-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/lidar_mapper/lidar_mapper.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/lib/python3.10/site-packages/lidar_mapper-0.0.0-py3.10.egg-info
+running install_scripts
+Installing subcriber_lidar script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/lib/lidar_mapper
+writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/lidar_mapper/install.log'

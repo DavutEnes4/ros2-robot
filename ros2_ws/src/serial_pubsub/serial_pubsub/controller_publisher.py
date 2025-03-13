@@ -36,26 +36,29 @@ class ControllerPublisher(Node):
 
                         # X ekseni
                         if event.axis == 0:
-                            x_axis = round(event.value,2)
-                             #round(event.value * 100, 2)
+                            x_axis = round(event.value * 100, 2)  # -100 ile 100 arasında dönüşüm
 
                         # Y ekseni
                         elif event.axis == 1:
-                            y_axis = round(event.value,2) 
-                             #round(event.value * 100, 2)
+                            y_axis = round(event.value * 100, 2)  # -100 ile 100 arasında dönüşüm
+
+                        # Hız (SPEED) hesaplama
+                        speed = round(joystick.get_axis(2) * 100, 2)  # Z ekseninden hız bilgisi alınır (örneğin sağ tetikleyici)
+
+                        # MOVE komutunu formatla
+                        command = f"MOVE {x_axis},{y_axis},{speed}"
 
                         # Verilerin yayımlanması için koşullar
                         current_time = time.time()
                         time_diff = current_time - self.last_publish_time
 
                         # Gönderme sıklığı ve yakınlık kontrolü
-  
                         msg = String()
-                        msg.data = f"{x_axis},{y_axis}\n"
+                        msg.data = f"{command}\n"
                         self.publisher_.publish(msg)
                         self.get_logger().info(f"Publishing: {msg.data}")
 
-                        # Durum güncellemeleri
+                        # Durum güncellemeleriraspiLaunch
                         self.last_publish_time = current_time
                         self.last_x, self.last_y = x_axis, y_axis
 

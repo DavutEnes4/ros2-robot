@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/multi_launch/multi_launch.egg-info/PKG-INFO
+writing dependency_links to ../../build/multi_launch/multi_launch.egg-info/dependency_links.txt
+writing entry points to ../../build/multi_launch/multi_launch.egg-info/entry_points.txt
+writing requirements to ../../build/multi_launch/multi_launch.egg-info/requires.txt
+writing top-level names to ../../build/multi_launch/multi_launch.egg-info/top_level.txt
+reading manifest file '../../build/multi_launch/multi_launch.egg-info/SOURCES.txt'
+writing manifest file '../../build/multi_launch/multi_launch.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/multi_launch.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch
+running install_egg_info
+removing '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib/python3.10/site-packages/multi_launch-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/multi_launch/multi_launch.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib/python3.10/site-packages/multi_launch-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/install.log'
