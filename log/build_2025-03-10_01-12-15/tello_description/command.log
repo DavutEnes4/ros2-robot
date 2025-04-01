@@ -1,4 +1,0 @@
-Invoking command in '/home/encoder/Desktop/ros2-robot/build/tello_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/tello_description -- -j12 -l12
-Invoked command in '/home/encoder/Desktop/ros2-robot/build/tello_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/tello_description -- -j12 -l12
-Invoking command in '/home/encoder/Desktop/ros2-robot/build/tello_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/tello_description
-Invoked command in '/home/encoder/Desktop/ros2-robot/build/tello_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/build/tello_description

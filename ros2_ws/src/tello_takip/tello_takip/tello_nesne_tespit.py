@@ -33,17 +33,13 @@ class TelloNesneTespit(Node):
         """
         ROS 2 düğümünü başlatır, gerekli publisher ve subscriber'ları oluşturur,
         YOLO modelini yükler ve başlangıç parametrelerini ayarlar.
-
-        Raises:
-            FileNotFoundError: Model dosyası ('best3.pt') bulunamazsa oluşur.
-            Exception: Model yüklemesinde oluşabilecek diğer hatalar.
         """
         super().__init__('tello_nesne_tespit')
 
-        # Görüntü boyutu ve ölü bölge
-        self.cercevGenislik = 640
-        self.cercevYukseklik = 480
-        self.oludBolge = 50  # Drone hareket etmeyecek kadar merkezde olan bölge (px)
+        # Görüntü boyutu ve ölü bölge ayarları güncellendi:
+        self.cercevGenislik = 1280      # Eski: 640
+        self.cercevYukseklik = 720       # Eski: 480
+        self.oludBolge = 100            # Eski: 50
 
         # Durum değişkenleri
         self.nesne_bulundu = False
@@ -53,7 +49,7 @@ class TelloNesneTespit(Node):
         # YOLO model dosyasını yükle
         self.model = YOLO("/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_takip/tello_takip/best3.pt")
 
-        # CV bridge (ROS <-> OpenCV)
+        # CV Bridge (ROS <-> OpenCV)
         self.kopru = CvBridge()
 
         # ROS publisher'ları
@@ -135,7 +131,7 @@ class TelloNesneTespit(Node):
             self.kalkis()
             self.arama_yapiliyor = True
             self.arama_baslangic_zamani = self.get_clock().now().nanoseconds / 1e9
-
+    
         mevcut_zaman = self.get_clock().now().nanoseconds / 1e9
         if mevcut_zaman - self.arama_baslangic_zamani < 10.0:
             self.hiz_komutu_gonder(0, 0, 0, 0.2)  # Yavaşça dön
@@ -172,7 +168,7 @@ class TelloNesneTespit(Node):
                 self.hiz_komutu_gonder(0, 0, 0, 0)
 
             tespit = tespitler[0]
-            x1, y1, x2, y2, guven, sinif = tespit.cpu().numpy()
+            x1, y1, x2, y2, guven, sinif = tespit.numpy()
             cx = int((x1 + x2) / 2)
             cy = int((y1 + y2) / 2)
 
@@ -211,9 +207,6 @@ class TelloNesneTespit(Node):
 
         Args:
             veri (Image): ROS formatında kamera verisi.
-
-        Raises:
-            Exception: OpenCV dönüşümlerinde hata olursa loglar.
         """
         try:
             cv_goruntu = self.kopru.imgmsg_to_cv2(veri, "bgr8")
@@ -223,7 +216,14 @@ class TelloNesneTespit(Node):
                 sonuclar = self.model(self.mevcut_goruntu)
                 if len(sonuclar[0].boxes.data) > 0:
                     self.nesne_bulundu = True
-                    self.get_logger().info("Arama sırasında nesne bulundu")
+                    self.arama_yapiliyor = False
+                    self.get_logger().info("Arama sırasında nesne bulundu, takip moduna geçiliyor")
+                    islenmis_kare = self.kareyi_isle(self.mevcut_goruntu)
+                    if islenmis_kare is not None:
+                        cv2.imshow("Drone Takip", islenmis_kare)
+                        cv2.waitKey(1)
+                else:
+                    self.nesne_ara()
             elif self.nesne_bulundu:
                 islenmis_kare = self.kareyi_isle(self.mevcut_goruntu)
                 if islenmis_kare is not None:
@@ -248,7 +248,7 @@ def main(args=None):
     tespit_edici = TelloNesneTespit()
 
     try:
-        tespit_edici.calistir()
+        #tespit_edici.calistir()
         rclpy.spin(tespit_edici)
     except KeyboardInterrupt:
         tespit_edici.get_logger().info("Kapatılıyor...")

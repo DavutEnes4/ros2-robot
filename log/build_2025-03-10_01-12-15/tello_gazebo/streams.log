@@ -1,4 +1,0 @@
-[0.096s] Invoking command in '/home/encoder/Desktop/ros2-robot/build/tello_gazebo': AMENT_PREFIX_PATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/encoder/Desktop/ros2-robot/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/build/tello_gazebo -- -j12 -l12
-[0.346s] [ 50%] [32mBuilding CXX object CMakeFiles/TelloPlugin.dir/src/tello_plugin.cpp.o[0m
-[80.589s] [100%] [32m[1mLinking CXX shared library libTelloPlugin.so[0m
-[83.063s] [100%] Built target TelloPlugin
