@@ -118,11 +118,13 @@ class TelloNode(Node):
         if not cap.isOpened():
             self.get_logger().error("Video akışı alınamadı!")
             return
-        
+        self.get_logger().warn("Veri akışoı aktif")
+
         while True:
             ret, frame = cap.read()
             if ret:
                 # Görüntüyü ROS mesajına dönüştür ve yayınla
+                self.get_logger().warn("Kare okundu")
                 try:
                     img_msg = self.bridge.cv2_to_imgmsg(frame, "bgr8")
                     self.image_pub.publish(img_msg)

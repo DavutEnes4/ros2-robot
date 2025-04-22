@@ -1,0 +1,24 @@
+[4.869s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_takip': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_takip build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/install.log --single-version-externally-managed install_data
+[6.728s] running egg_info
+[6.733s] writing ../../build/tello_takip/tello_takip.egg-info/PKG-INFO
+[6.733s] writing dependency_links to ../../build/tello_takip/tello_takip.egg-info/dependency_links.txt
+[6.734s] writing entry points to ../../build/tello_takip/tello_takip.egg-info/entry_points.txt
+[6.742s] writing requirements to ../../build/tello_takip/tello_takip.egg-info/requires.txt
+[6.742s] writing top-level names to ../../build/tello_takip/tello_takip.egg-info/top_level.txt
+[6.765s] reading manifest file '../../build/tello_takip/tello_takip.egg-info/SOURCES.txt'
+[6.772s] writing manifest file '../../build/tello_takip/tello_takip.egg-info/SOURCES.txt'
+[6.772s] running build
+[6.773s] running build_py
+[6.773s] copying tello_takip/tello_nesne_tespit.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip
+[6.773s] running install
+[6.774s] running install_lib
+[6.786s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip/tello_nesne_tespit.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip
+[6.787s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip/tello_nesne_tespit.py to tello_nesne_tespit.cpython-310.pyc
+[6.812s] running install_data
+[6.812s] running install_egg_info
+[6.825s] removing '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip-0.0.1-py3.10.egg-info' (and everything under it)
+[6.840s] Copying ../../build/tello_takip/tello_takip.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip-0.0.1-py3.10.egg-info
+[6.840s] running install_scripts
+[7.021s] Installing tello_nesne_tespit script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/tello_takip
+[7.021s] writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/install.log'
+[7.136s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_takip' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_takip build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/install.log --single-version-externally-managed install_data

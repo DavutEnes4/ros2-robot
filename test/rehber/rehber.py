@@ -17,9 +17,9 @@ def excel_to_vcf(excel_file, sheet_name=0, name_col="Name", phone_col="Phone", o
         
         name_parts = name.rsplit(" ", 1)
         if len(name_parts) > 1:
-            name = f"PGV {name_parts[0]} {name_parts[1].upper()}"
+            name = f"Poligon 2025 {name_parts[0]} {name_parts[1].upper()}"
         else:
-            name = f"PGV {name.upper()}"
+            name = f"Poligon 2025 {name.upper()}"
         
         vcard_entry = f"""
 BEGIN:VCARD

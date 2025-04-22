@@ -131,7 +131,7 @@ class TelloNesneTespit(Node):
             self.kalkis()
             self.arama_yapiliyor = True
             self.arama_baslangic_zamani = self.get_clock().now().nanoseconds / 1e9
-    
+            self.get_logger().info(f"Arama başlangıç zamanı {self.arama_baslangic_zamani}")
         mevcut_zaman = self.get_clock().now().nanoseconds / 1e9
         if mevcut_zaman - self.arama_baslangic_zamani < 10.0:
             self.hiz_komutu_gonder(0, 0, 0, 0.2)  # Yavaşça dön
@@ -208,12 +208,18 @@ class TelloNesneTespit(Node):
         Args:
             veri (Image): ROS formatında kamera verisi.
         """
+        self.get_logger().info("Kameradan görüntü geldi")
         try:
+            self.get_logger().info("Bir şeyler denemeye başladım")
             cv_goruntu = self.kopru.imgmsg_to_cv2(veri, "bgr8")
             self.mevcut_goruntu = cv2.resize(cv_goruntu, (self.cercevGenislik, self.cercevYukseklik))
-
+            
+            self.get_logger().info("Görüntüyü işledim")
+            self.get_logger().info(f"arama yapılam durumu:{self.arama_yapiliyor}")
+            
             if self.arama_yapiliyor:
                 sonuclar = self.model(self.mevcut_goruntu)
+                self.get_logger().info(f"Sonuçlar : {sonuclar}")
                 if len(sonuclar[0].boxes.data) > 0:
                     self.nesne_bulundu = True
                     self.arama_yapiliyor = False
@@ -230,6 +236,7 @@ class TelloNesneTespit(Node):
                     cv2.imshow("Drone Takip", islenmis_kare)
                     cv2.waitKey(1)
             else:
+                self.get_logger().info(f"Nesne buluanamdı")
                 self.nesne_ara()
 
         except Exception as e:
@@ -248,7 +255,7 @@ def main(args=None):
     tespit_edici = TelloNesneTespit()
 
     try:
-        #tespit_edici.calistir()
+        tespit_edici.calistir()
         rclpy.spin(tespit_edici)
     except KeyboardInterrupt:
         tespit_edici.get_logger().info("Kapatılıyor...")
