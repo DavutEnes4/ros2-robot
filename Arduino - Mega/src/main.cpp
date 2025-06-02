@@ -318,7 +318,7 @@ void moveRobot(float x, float y, int speed)
 {
     // x, y: -100 ile 100 arası normalize edilmiş hareket vektörü
     // speed: 0-100 arası hız limiti
-
+    command
     // Hızı 0-255 aralığına ölçekle
     speed = map(speed, 0, 100, 0, 255);
 
@@ -412,12 +412,10 @@ void setMotorSpeed(bool isLeft, int speed)
     {
         if (isLeft)
             speed = -speed;            // Mutlak değeri al
-            
+
         digitalWrite(enablePin, LOW); // Motoru etkinleştir
         if (speed > 0)
-        {
             digitalWrite(dirPin, HIGH); // İleri
-        }
         else
         {
             digitalWrite(dirPin, LOW); // Geri

@@ -1,18 +1,3 @@
-#!/usr/bin/env python3
-
-"""
-TelloNesneTespit
-===============
-ROS 2 tabanlı bu sınıf, Tello drone'u ile görüntü işleme ve nesne takibi gerçekleştirmek için geliştirilmiştir.
-YOLO modeli ile nesne tespiti yapar ve drone'u tespit edilen nesneye göre yönlendirir.
-
-Yetenekler:
-- Görüntü alımı ve YOLO modeli ile nesne tespiti
-- Drone hareket kontrolü (Twist komutları)
-- Pil durumu ve uçuş durumu takibi
-- Otomatik arama ve iniş algoritması
-"""
-
 import rclpy
 from rclpy.node import Node
 import numpy as np
@@ -21,48 +6,30 @@ from cv_bridge import CvBridge
 from sensor_msgs.msg import Image, BatteryState
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Empty, String
-import time
 import cv2
+import time
 
 class TelloNesneTespit(Node):
-    """
-    Tello drone için nesne tespiti ve takip düğümü.
-    """
-
     def __init__(self):
-        """
-        ROS 2 düğümünü başlatır, gerekli publisher ve subscriber'ları oluşturur,
-        YOLO modelini yükler ve başlangıç parametrelerini ayarlar.
-        """
         super().__init__('tello_nesne_tespit')
 
-        # Görüntü boyutu ve ölü bölge ayarları güncellendi:
-        self.cercevGenislik = 1280      # Eski: 640
-        self.cercevYukseklik = 720       # Eski: 480
-        self.oludBolge = 100            # Eski: 50
+        self.oludBolge = 100
 
-        # Durum değişkenleri
         self.nesne_bulundu = False
         self.arama_yapiliyor = False
         self.arama_baslangic_zamani = 0
 
-        # YOLO model dosyasını yükle
         self.model = YOLO("/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_takip/tello_takip/best3.pt")
-
-        # CV Bridge (ROS <-> OpenCV)
         self.kopru = CvBridge()
 
-        # ROS publisher'ları
         self.hiz_komutu_yayinci = self.create_publisher(Twist, '/tello/cmd_vel', 10)
         self.kalkis_yayinci = self.create_publisher(Empty, '/tello/takeoff', 10)
         self.inis_yayinci = self.create_publisher(Empty, '/tello/land', 10)
 
-        # ROS subscriber'ları
         self.create_subscription(Image, '/tello/image_raw', self.goruntu_callback, 10)
         self.create_subscription(BatteryState, '/tello/battery', self.pil_callback, 10)
         self.create_subscription(String, '/tello/state', self.durum_callback, 10)
 
-        # Ek durum değişkenleri
         self.mevcut_goruntu = None
         self.pil_seviyesi = 0
         self.drone_durumu = ""
@@ -70,200 +37,128 @@ class TelloNesneTespit(Node):
         self.get_logger().info("Tello Nesne Tespit node'u başlatıldı")
 
     def pil_callback(self, veri: BatteryState) -> None:
-        """
-        Pil bilgilerini işler.
-
-        Args:
-            veri (BatteryState): Drone'dan gelen pil durumu mesajı.
-        """
         self.pil_seviyesi = veri.percentage
-        self.get_logger().info(f"Batarya seviyesi: %{self.pil_seviyesi}")
 
     def durum_callback(self, veri: String) -> None:
-        """
-        Drone'un durum bilgisini işler.
-
-        Args:
-            veri (String): Uçuş durumu bilgisi.
-        """
         self.drone_durumu = veri.data
-        self.get_logger().info(f"Drone durumu: {self.drone_durumu}")
 
     def hiz_komutu_gonder(self, x: float, y: float, z: float, yaw: float) -> None:
-        """
-        Drone'a hız komutu gönderir.
+        twist = Twist()
+        twist.linear.x = x
+        twist.linear.y = y
+        twist.linear.z = z
+        twist.angular.z = yaw
+        self.hiz_komutu_yayinci.publish(twist)
 
-        Args:
-            x (float): İleri/geri hareket (pozitif: ileri, negatif: geri)
-            y (float): Sola/sağa hareket (pozitif: sağa, negatif: sola)
-            z (float): Yukarı/aşağı hareket
-            yaw (float): Yaw dönüş komutu
-        """
-        twist_mesaji = Twist()
-        twist_mesaji.linear.x = float(x)
-        twist_mesaji.linear.y = float(y)
-        twist_mesaji.linear.z = float(z)
-        twist_mesaji.angular.z = float(yaw)
-        self.hiz_komutu_yayinci.publish(twist_mesaji)
-
-    def kalkis(self) -> None:
-        """
-        Drone'u kalkışa geçirir.
-        """
+    def kalkis(self):
         self.get_logger().info("Drone kalkıyor...")
         self.kalkis_yayinci.publish(Empty())
-        time.sleep(5)  # Kalkış tamamlanana kadar bekle
+        time.sleep(5)
 
-    def inis(self) -> None:
-        """
-        Drone'u inişe geçirir.
-        """
+    def inis(self):
         self.get_logger().info("Drone iniş yapıyor...")
         self.inis_yayinci.publish(Empty())
 
-    def nesne_ara(self) -> None:
-        """
-        Drone'a dönerek nesne arama modunu başlatır.
-        Nesne bulunursa arama durur. 10 saniye sonunda hala nesne yoksa iniş yapılır.
-        """
+    def nesne_ara(self):
         if not self.arama_yapiliyor:
-            self.get_logger().info("Arama moduna geçiliyor")
             self.kalkis()
             self.arama_yapiliyor = True
             self.arama_baslangic_zamani = self.get_clock().now().nanoseconds / 1e9
-            self.get_logger().info(f"Arama başlangıç zamanı {self.arama_baslangic_zamani}")
+
         mevcut_zaman = self.get_clock().now().nanoseconds / 1e9
         if mevcut_zaman - self.arama_baslangic_zamani < 10.0:
-            self.hiz_komutu_gonder(0, 0, 0, 0.2)  # Yavaşça dön
+            self.hiz_komutu_gonder(0, 0, 0, 0.2)
         else:
-            self.get_logger().info("Arama tamamlandı")
             self.arama_yapiliyor = False
             if not self.nesne_bulundu:
                 self.get_logger().info("Nesne bulunamadı, drone iniş yapıyor")
                 self.inis()
-            self.hiz_komutu_gonder(0, 0, 0, 0)  # Dönmeyi durdur
+            self.hiz_komutu_gonder(0, 0, 0, 0)
+
+    def nesne_tespiti_ve_koordinat(self, kare: np.ndarray):
+        sonuclar = self.model(kare)
+        tespitler = sonuclar[0].boxes.data
+        islenmis_kare = kare.copy()
+
+        if len(tespitler) > 0:
+            tespit = tespitler[0]
+            return islenmis_kare, tuple(tespit.tolist())
+        else:
+            return islenmis_kare, None
+
+    def hareket_komutu_gonder(self, dx: int, dy: int):
+        if abs(dx) > self.oludBolge:
+            self.hiz_komutu_gonder(0, 0.2 if dx > 0 else -0.2, 0, 0)
+        elif abs(dy) > self.oludBolge:
+            self.hiz_komutu_gonder(0.2 if dy < 0 else -0.2, 0, 0, 0)
+        else:
+            self.hiz_komutu_gonder(0, 0, 0, 0)
 
     def kareyi_isle(self, kare: np.ndarray) -> np.ndarray:
-        """
-        Kameradan alınan karede nesne tespiti yapar ve drone'u yönlendirir.
-
-        Args:
-            kare (np.ndarray): İşlenecek görüntü karesi (BGR formatında).
-
-        Returns:
-            np.ndarray: Görselleştirme amacıyla nesne çerçevesi çizilmiş kare.
-        """
         if kare is None:
             return None
 
-        sonuclar = self.model(kare)
-        tespitler = sonuclar[0].boxes.data
-        islenmisCerceveKare = kare.copy()
+        cerceve_yukseklik, cerceve_genislik = kare.shape[:2]
+        kare_kopyasi, tespit = self.nesne_tespiti_ve_koordinat(kare)
 
-        if len(tespitler) > 0:
+        if tespit:
             self.nesne_bulundu = True
             if self.arama_yapiliyor:
-                self.get_logger().info("Nesne bulundu, arama durduruluyor")
                 self.arama_yapiliyor = False
                 self.hiz_komutu_gonder(0, 0, 0, 0)
 
-            tespit = tespitler[0]
-            x1, y1, x2, y2, guven, sinif = tespit.numpy()
+            x1, y1, x2, y2, guven, sinif = tespit
             cx = int((x1 + x2) / 2)
             cy = int((y1 + y2) / 2)
 
-            # Çizim işlemleri
-            cv2.rectangle(islenmisCerceveKare, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
-            cv2.putText(islenmisCerceveKare, f"Class: {int(sinif)} Conf: {guven:.2f}",
+            cv2.rectangle(kare_kopyasi, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
+            cv2.putText(kare_kopyasi, f"Class: {int(sinif)} Conf: {guven:.2f}",
                         (int(x1), int(y1) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 0, 0), 2)
 
-            # Konuma göre hareket
-            if cx < self.cercevGenislik // 2 - self.oludBolge:
-                self.get_logger().info("Sola hareket")
-                self.hiz_komutu_gonder(0, -0.2, 0, 0)
-            elif cx > self.cercevGenislik // 2 + self.oludBolge:
-                self.get_logger().info("Sağa hareket")
-                self.hiz_komutu_gonder(0, 0.2, 0, 0)
-            elif cy < self.cercevYukseklik // 2 - self.oludBolge:
-                self.get_logger().info("İleri hareket")
-                self.hiz_komutu_gonder(0.2, 0, 0, 0)
-            elif cy > self.cercevYukseklik // 2 + self.oludBolge:
-                self.get_logger().info("Geri hareket")
-                self.hiz_komutu_gonder(-0.2, 0, 0, 0)
-            else:
-                self.get_logger().info("Drone merkezde")
-                self.hiz_komutu_gonder(0, 0, 0, 0)
+            dx = cx - cerceve_genislik // 2
+            dy = cy - cerceve_yukseklik // 2
+            self.hareket_komutu_gonder(dx, dy)
         else:
-            if not self.arama_yapiliyor and self.nesne_bulundu:
-                self.get_logger().info("Nesne kaybedildi, yeniden aranıyor")
+            if self.nesne_bulundu:
                 self.nesne_bulundu = False
+            if not self.arama_yapiliyor:
                 self.nesne_ara()
 
-        return islenmisCerceveKare
+        return kare_kopyasi
 
     def goruntu_callback(self, veri: Image) -> None:
-        """
-        Kameradan gelen ROS görüntüsünü işler ve nesne takibini başlatır.
-
-        Args:
-            veri (Image): ROS formatında kamera verisi.
-        """
-        self.get_logger().info("Kameradan görüntü geldi")
         try:
-            self.get_logger().info("Bir şeyler denemeye başladım")
             cv_goruntu = self.kopru.imgmsg_to_cv2(veri, "bgr8")
-            self.mevcut_goruntu = cv2.resize(cv_goruntu, (self.cercevGenislik, self.cercevYukseklik))
-            
-            self.get_logger().info("Görüntüyü işledim")
-            self.get_logger().info(f"arama yapılam durumu:{self.arama_yapiliyor}")
-            
-            if self.arama_yapiliyor:
-                sonuclar = self.model(self.mevcut_goruntu)
-                self.get_logger().info(f"Sonuçlar : {sonuclar}")
-                if len(sonuclar[0].boxes.data) > 0:
-                    self.nesne_bulundu = True
-                    self.arama_yapiliyor = False
-                    self.get_logger().info("Arama sırasında nesne bulundu, takip moduna geçiliyor")
-                    islenmis_kare = self.kareyi_isle(self.mevcut_goruntu)
-                    if islenmis_kare is not None:
-                        cv2.imshow("Drone Takip", islenmis_kare)
-                        cv2.waitKey(1)
-                else:
-                    self.nesne_ara()
-            elif self.nesne_bulundu:
+            self.mevcut_goruntu = cv_goruntu
+
+            if self.arama_yapiliyor or self.nesne_bulundu:
                 islenmis_kare = self.kareyi_isle(self.mevcut_goruntu)
                 if islenmis_kare is not None:
                     cv2.imshow("Drone Takip", islenmis_kare)
                     cv2.waitKey(1)
             else:
-                self.get_logger().info(f"Nesne buluanamdı")
                 self.nesne_ara()
-
         except Exception as e:
             self.get_logger().error(f"Görüntü işleme hatası: {str(e)}")
 
-    def calistir(self) -> None:
-        """
-        Başlangıç fonksiyonudur. Pil seviyesi loglanır ve nesne arama süreci başlatılır.
-        """
+    def calistir(self):
         self.get_logger().info(f"Başlangıç batarya seviyesi: %{self.pil_seviyesi}")
         self.nesne_ara()
 
-def main(args=None):
-    """Ana ROS2 giriş fonksiyonu"""
-    rclpy.init(args=args)
-    tespit_edici = TelloNesneTespit()
 
+def main(args=None):
+    rclpy.init(args=args)
+    tespit_node = TelloNesneTespit()
     try:
-        tespit_edici.calistir()
-        rclpy.spin(tespit_edici)
+        tespit_node.calistir()
+        rclpy.spin(tespit_node)
     except KeyboardInterrupt:
-        tespit_edici.get_logger().info("Kapatılıyor...")
-        tespit_edici.inis()
+        tespit_node.inis()
         cv2.destroyAllWindows()
     finally:
-        tespit_edici.destroy_node()
+        tespit_node.destroy_node()
         rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

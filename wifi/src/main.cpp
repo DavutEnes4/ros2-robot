@@ -10,26 +10,21 @@
 Scheduler userScheduler;
 painlessMesh  mesh;
 
-// Usb okuması için buffer
 String inputBuffer = "";
 bool commandComplete = false;
 uint32_t id;
 
-// Mesaj liste uzunluğu ve saklama süresi
 #define MAX_ID_LSIT_SIZE 10
 #define MESSAGE_MS 60000
 
-//Gelen mesajları ramde şişme yapmasın kimlik ve zamnalarını sakladığımız struct yapısı
-
 struct MesajKaydi
-{
+{	
 	String msg_id;
 	unsigned long timestamp;
 };
 
 std::deque<MesajKaydi> alinanMesajlar;
 
-//Mesajın kayıtlı olup olmadığını test eden fonksiyon
 bool isNewMessage(String msg_id){
 	unsigned long now = millis();
 
@@ -54,7 +49,7 @@ bool isNewMessage(String msg_id){
 }
 
 void receivedCallback(uint32_t from, String &msg) {
-	DynamicJsonDocument doc(256);
+	StaticJsonDocument doc(512);
 	DeserializationError error = deserializeJson(doc,msg);
 
 	if(error) {
@@ -84,7 +79,7 @@ void receivedCallback(uint32_t from, String &msg) {
 
 void setup() {
 	Serial.begin(115200);
-	mesh.setDebugMsgTypes(ERROR | STARTUP | CONNECTION);
+	// # mesh.setDebugMsgTypes(ERROR | STARTUP | CONNECTION);
 	mesh.init(MESH_PREFIX, MESH_PASSWORD, &userScheduler, MESH_PORT);
 	mesh.onReceive(&receivedCallback);
 	id = mesh.getNodeId();
@@ -92,7 +87,6 @@ void setup() {
 
 }
 
-// Mesaja benzersiz ID oluşturur
 String generateMessageId() {
 	return String(id) + "_" + String(millis());
 }
@@ -119,7 +113,7 @@ void executeCommand(String command)
 
 			uint32_t hedefID = idStr.toInt();
 
-			DynamicJsonDocument doc(256);
+			StaticJsonDocument doc(512);
 			doc["msg_id"] = generateMessageId();
 			doc["gonderen_id"] = id;
 			doc["alici_id"] = hedefID;
@@ -138,6 +132,7 @@ void executeCommand(String command)
 }
 
 void fSendProcess(){
+	inputBuffer = "";
 	// Seri porttan komutları oku
 	while (Serial.available() > 0 && !commandComplete)
 	{

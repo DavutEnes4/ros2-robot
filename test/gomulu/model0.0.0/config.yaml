@@ -1,5 +1,0 @@
-train: /home/encoder/Desktop/ros2-robot/test/gomulu/model0.0.0/train/images/
-val: /home/encoder/Desktop/ros2-robot/test/gomulu/model0.0.0/val/images/
-
-nc: 1
-names: ['badem']
