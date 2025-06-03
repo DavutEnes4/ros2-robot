@@ -1,0 +1,24 @@
+[5.134s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/usb_camera_node': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/usb_camera_node build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/install.log --single-version-externally-managed install_data
+[5.744s] running egg_info
+[5.746s] writing ../../build/usb_camera_node/usb_camera_node.egg-info/PKG-INFO
+[5.747s] writing dependency_links to ../../build/usb_camera_node/usb_camera_node.egg-info/dependency_links.txt
+[5.748s] writing entry points to ../../build/usb_camera_node/usb_camera_node.egg-info/entry_points.txt
+[5.748s] writing requirements to ../../build/usb_camera_node/usb_camera_node.egg-info/requires.txt
+[5.749s] writing top-level names to ../../build/usb_camera_node/usb_camera_node.egg-info/top_level.txt
+[5.755s] reading manifest file '../../build/usb_camera_node/usb_camera_node.egg-info/SOURCES.txt'
+[5.758s] writing manifest file '../../build/usb_camera_node/usb_camera_node.egg-info/SOURCES.txt'
+[5.759s] running build
+[5.759s] running build_py
+[5.760s] copying usb_camera_node/usb_camera_publisher.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/build/lib/usb_camera_node
+[5.760s] running install
+[5.761s] running install_lib
+[5.764s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/build/lib/usb_camera_node/usb_camera_publisher.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/lib/python3.10/site-packages/usb_camera_node
+[5.766s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/lib/python3.10/site-packages/usb_camera_node/usb_camera_publisher.py to usb_camera_publisher.cpython-310.pyc
+[5.769s] running install_data
+[5.773s] running install_egg_info
+[5.781s] removing '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/lib/python3.10/site-packages/usb_camera_node-0.0.1-py3.10.egg-info' (and everything under it)
+[5.781s] Copying ../../build/usb_camera_node/usb_camera_node.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/lib/python3.10/site-packages/usb_camera_node-0.0.1-py3.10.egg-info
+[5.782s] running install_scripts
+[5.832s] Installing usb_camera_publisher script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/lib/usb_camera_node
+[5.836s] writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/install.log'
+[5.885s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/usb_camera_node' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/usb_camera_node build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/install.log --single-version-externally-managed install_data

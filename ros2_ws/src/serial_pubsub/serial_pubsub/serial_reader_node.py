@@ -1,47 +1,103 @@
 import sys
+import re
 import serial
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
 
-class SerialReader(Node):
-    def __init__(self, port_name):
-        super().__init__('serial_reader_node')
-        self.get_logger().info(f'Serial Reader started on port: {port_name}')
-        
+
+class MeshMessageForwarder(Node):
+    """Seri hatta gelen ESP‑Mesh çıktısından *sadece mesaj içeriğini* ayıklar,
+    ikinci seri porta iletir **ve** işlenme durumunu da yazar.
+
+    Kabul edilen satır formatları:
+      [123456] size gelen mesaj: Merhaba
+      Node 897'ya mesaj gönderildi: Merhaba
+    Çıktı formatı (çıkış portuna iki satır gönderilir):
+      Merhaba
+      STATUS: FORWARDED
+    """
+
+    _PATTERN_RECV = re.compile(r"^\[\d+\] size gelen mesaj: (.+)")
+    _PATTERN_SENT = re.compile(r"^Node \d+'ya mesaj g\u00f6nderildi: (.+)")
+
+    def __init__(self, port_in: str, port_out: str, baudrate: int = 115200):
+        super().__init__('mesh_message_forwarder')
+        self.get_logger().info(f"Başladı: {port_in} → {port_out}")
+
         try:
-            self.ser = serial.Serial(port_name, 115200, timeout=1)
+            self.ser_in = serial.Serial(port_in, baudrate, timeout=1)
         except serial.SerialException as e:
-            self.get_logger().error(f'Serial port error: {e}')
+            self.get_logger().error(f"Giriş portu hatası: {e}")
             raise SystemExit
 
-        self.publisher = self.create_publisher(String, 'keyboard_topic', 10)
-        self.timer = self.create_timer(0.1, self.read_serial_data)  # 10Hz
+        try:
+            self.ser_out = serial.Serial(port_out, baudrate, timeout=1)
+        except serial.SerialException as e:
+            self.get_logger().error(f"Çıkış portu hatası: {e}")
+            self.ser_in.close()
+            raise SystemExit
 
-    def read_serial_data(self):
-        if self.ser.in_waiting > 0:
-            line = self.ser.readline().decode('utf-8').strip()
-            if line:
-                msg = String()
-                msg.data = line
-                self.publisher.publish(msg)
-                self.get_logger().info(f'Published: {line}')
+        # 100 Hz okuma d\u00f6ng\u00fcs\u00fc
+        self.timer = self.create_timer(0.01, self._process_serial)
 
+    # ---------------------------------------------------------------
+    @staticmethod
+    def _extract_payload(line: str):
+        """Seri satırdan mesajı döndürür; bulunamazsa None."""
+        m = MeshMessageForwarder._PATTERN_RECV.match(line)
+        if not m:
+            m = MeshMessageForwarder._PATTERN_SENT.match(line)
+        return m.group(1).strip() if m else None
+
+    # ---------------------------------------------------------------
+    def _process_serial(self):
+        if self.ser_in.in_waiting == 0:
+            return
+
+        raw = self.ser_in.readline().decode('utf-8', errors='ignore').strip()
+        if not raw:
+            return
+
+        payload = self._extract_payload(raw)
+        if payload is None:
+            return
+
+        status_line = "STATUS: FORWARDED"
+
+        # Çıkış portuna iki satır: mesaj + durum
+        if self.ser_out.is_open:
+            try:
+                self.ser_out.write((payload + '\n').encode('utf-8'))
+                self.ser_out.write((status_line + '\n').encode('utf-8'))
+            except serial.SerialException as e:
+                self.get_logger().error(f"Çıkış portu yazma hatası: {e}")
+
+        self.get_logger().info(f"Mesaj iletildi → '{payload}'")
+
+    # ---------------------------------------------------------------
     def destroy_node(self):
-        if self.ser.is_open:
-            self.ser.close()
+        if self.ser_in.is_open:
+            self.ser_in.close()
+        if self.ser_out.is_open:
+            self.ser_out.close()
         super().destroy_node()
+
+
+# -------------------------------------------------------------------
+# main()
+# -------------------------------------------------------------------
 
 def main(args=None):
     rclpy.init(args=args)
 
-    # Seri port argümanla verilmeli
-    if len(sys.argv) < 2:
-        print("Kullanım: ros2 run <paket_adi> serial_reader_node.py /dev/ttyUSB0")
+    if len(sys.argv) < 3:
+        print("Kullanım: ros2 run <paket_adi> mesh_message_forwarder.py /dev/ttyUSB0 /dev/ttyUSB1")
         return
 
-    port = sys.argv[1]
-    node = SerialReader(port)
+    port_in = sys.argv[1]
+    port_out = sys.argv[2]
+
+    node = MeshMessageForwarder(port_in, port_out)
 
     try:
         rclpy.spin(node)
@@ -50,6 +106,7 @@ def main(args=None):
     finally:
         node.destroy_node()
         rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

@@ -1,0 +1,35 @@
+[15.609s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/multi_launch': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/multi_launch build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/install.log --single-version-externally-managed install_data
+[17.407s] running egg_info
+[17.414s] creating ../../build/multi_launch/multi_launch.egg-info
+[17.415s] writing ../../build/multi_launch/multi_launch.egg-info/PKG-INFO
+[17.421s] writing dependency_links to ../../build/multi_launch/multi_launch.egg-info/dependency_links.txt
+[17.422s] writing entry points to ../../build/multi_launch/multi_launch.egg-info/entry_points.txt
+[17.431s] writing requirements to ../../build/multi_launch/multi_launch.egg-info/requires.txt
+[17.434s] writing top-level names to ../../build/multi_launch/multi_launch.egg-info/top_level.txt
+[17.440s] writing manifest file '../../build/multi_launch/multi_launch.egg-info/SOURCES.txt'
+[17.441s] reading manifest file '../../build/multi_launch/multi_launch.egg-info/SOURCES.txt'
+[17.441s] writing manifest file '../../build/multi_launch/multi_launch.egg-info/SOURCES.txt'
+[17.441s] running build
+[17.442s] running build_py
+[17.450s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/build
+[17.451s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/build/lib
+[17.451s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/build/lib/multi_launch
+[17.451s] copying multi_launch/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/build/lib/multi_launch
+[17.452s] running install
+[17.452s] running install_lib
+[17.462s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib/python3.10/site-packages/multi_launch
+[17.463s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/build/lib/multi_launch/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib/python3.10/site-packages/multi_launch
+[17.470s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib/python3.10/site-packages/multi_launch/__init__.py to __init__.cpython-310.pyc
+[17.473s] running install_data
+[17.481s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/ament_index
+[17.482s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/ament_index/resource_index
+[17.482s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/ament_index/resource_index/packages
+[17.483s] copying resource/multi_launch -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/ament_index/resource_index/packages
+[17.483s] copying package.xml -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch
+[17.483s] copying launch/raspiLaunch.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch
+[17.484s] copying launch/pcLaunch.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch
+[17.484s] running install_egg_info
+[17.484s] Copying ../../build/multi_launch/multi_launch.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib/python3.10/site-packages/multi_launch-0.0.0-py3.10.egg-info
+[17.497s] running install_scripts
+[17.537s] writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/install.log'
+[17.684s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/multi_launch' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/multi_launch build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/install.log --single-version-externally-managed install_data

@@ -1,0 +1,24 @@
+-- Install configuration: ""
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/include
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/include/ros2_shared
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/include/ros2_shared/context_macros.hpp
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/include/ros2_shared/string_printf.hpp
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/include/ros2_shared/param_macros.hpp
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ament_index/resource_index/package_run_dependencies/ros2_shared
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ament_index/resource_index/parent_prefix_path/ros2_shared
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/environment/ament_prefix_path.sh
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/environment/ament_prefix_path.dsv
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/environment/path.sh
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/environment/path.dsv
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/local_setup.bash
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/local_setup.sh
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/local_setup.zsh
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/local_setup.dsv
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.dsv
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ament_index/resource_index/packages/ros2_shared
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/cmake/ros2_sharedConfig.cmake
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/cmake/ros2_sharedConfig-version.cmake
+-- Installing: /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.xml

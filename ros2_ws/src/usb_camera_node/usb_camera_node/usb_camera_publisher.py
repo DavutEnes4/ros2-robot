@@ -13,7 +13,7 @@ class UsbCameraPublisher(Node):
         self.bridge = CvBridge()
 
         # Kamera açılır
-        self.cap = cv2.VideoCapture(0)  # /dev/video0
+        self.cap = cv2.VideoCapture(2)  # /dev/video0
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 

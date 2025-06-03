@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/3d_display_node/3d_display_node.egg-info
+writing ../../build/3d_display_node/3d_display_node.egg-info/PKG-INFO
+writing dependency_links to ../../build/3d_display_node/3d_display_node.egg-info/dependency_links.txt
+writing entry points to ../../build/3d_display_node/3d_display_node.egg-info/entry_points.txt
+writing requirements to ../../build/3d_display_node/3d_display_node.egg-info/requires.txt
+writing top-level names to ../../build/3d_display_node/3d_display_node.egg-info/top_level.txt
+writing manifest file '../../build/3d_display_node/3d_display_node.egg-info/SOURCES.txt'
+reading manifest file '../../build/3d_display_node/3d_display_node.egg-info/SOURCES.txt'
+writing manifest file '../../build/3d_display_node/3d_display_node.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build/lib
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build/lib/3d_display_node
+copying 3d_display_node/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build/lib/3d_display_node
+copying 3d_display_node/camera_lidar_mapper.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build/lib/3d_display_node
+running install
+running install_lib
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages/3d_display_node
+copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build/lib/3d_display_node/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages/3d_display_node
+copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build/lib/3d_display_node/camera_lidar_mapper.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages/3d_display_node
+byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages/3d_display_node/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages/3d_display_node/camera_lidar_mapper.py to camera_lidar_mapper.cpython-310.pyc
+running install_data
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/ament_index
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/ament_index/resource_index
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/ament_index/resource_index/packages
+copying resource/3d_display_node -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/ament_index/resource_index/packages
+copying package.xml -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node
+running install_egg_info
+Copying ../../build/3d_display_node/3d_display_node.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages/3d_display_node-0.0.0-py3.10.egg-info
+running install_scripts
+Installing camera_lidar_mapper script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/3d_display_node
+writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/install.log'

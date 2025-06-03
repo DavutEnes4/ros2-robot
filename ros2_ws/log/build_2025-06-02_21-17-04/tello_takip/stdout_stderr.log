@@ -1,0 +1,41 @@
+running egg_info
+creating ../../build/tello_takip/tello_takip.egg-info
+writing ../../build/tello_takip/tello_takip.egg-info/PKG-INFO
+writing dependency_links to ../../build/tello_takip/tello_takip.egg-info/dependency_links.txt
+writing entry points to ../../build/tello_takip/tello_takip.egg-info/entry_points.txt
+writing requirements to ../../build/tello_takip/tello_takip.egg-info/requires.txt
+writing top-level names to ../../build/tello_takip/tello_takip.egg-info/top_level.txt
+writing manifest file '../../build/tello_takip/tello_takip.egg-info/SOURCES.txt'
+reading manifest file '../../build/tello_takip/tello_takip.egg-info/SOURCES.txt'
+writing manifest file '../../build/tello_takip/tello_takip.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip
+copying tello_takip/tello_nesne_analiz.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip
+copying tello_takip/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip
+copying tello_takip/tello_nesne_tespit.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip
+copying tello_takip/best3.pt -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip
+running install
+running install_lib
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip
+copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip/tello_nesne_analiz.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip
+copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip/best3.pt -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip
+copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip
+copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip/tello_nesne_tespit.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip
+byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip/tello_nesne_analiz.py to tello_nesne_analiz.cpython-310.pyc
+byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip/tello_nesne_tespit.py to tello_nesne_tespit.cpython-310.pyc
+running install_data
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/ament_index
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/ament_index/resource_index
+creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/ament_index/resource_index/packages
+copying resource/tello_takip -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/ament_index/resource_index/packages
+copying package.xml -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip
+copying tello_takip/best3.pt -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip
+running install_egg_info
+Copying ../../build/tello_takip/tello_takip.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip-0.0.1-py3.10.egg-info
+running install_scripts
+Installing tello_nesne_tespit script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/tello_takip
+writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/install.log'

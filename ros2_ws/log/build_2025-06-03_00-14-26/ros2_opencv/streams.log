@@ -1,0 +1,22 @@
+[5.044s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_opencv build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/install.log --single-version-externally-managed install_data
+[5.892s] running egg_info
+[5.895s] writing ../../build/ros2_opencv/ros2_opencv.egg-info/PKG-INFO
+[5.895s] writing dependency_links to ../../build/ros2_opencv/ros2_opencv.egg-info/dependency_links.txt
+[5.896s] writing entry points to ../../build/ros2_opencv/ros2_opencv.egg-info/entry_points.txt
+[5.896s] writing requirements to ../../build/ros2_opencv/ros2_opencv.egg-info/requires.txt
+[5.896s] writing top-level names to ../../build/ros2_opencv/ros2_opencv.egg-info/top_level.txt
+[5.902s] reading manifest file '../../build/ros2_opencv/ros2_opencv.egg-info/SOURCES.txt'
+[5.904s] writing manifest file '../../build/ros2_opencv/ros2_opencv.egg-info/SOURCES.txt'
+[5.905s] running build
+[5.906s] running build_py
+[5.908s] running install
+[5.912s] running install_lib
+[5.914s] running install_data
+[5.915s] running install_egg_info
+[5.918s] removing '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages/ros2_opencv-0.0.0-py3.10.egg-info' (and everything under it)
+[5.919s] Copying ../../build/ros2_opencv/ros2_opencv.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages/ros2_opencv-0.0.0-py3.10.egg-info
+[5.919s] running install_scripts
+[5.980s] Installing publisher_node script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/ros2_opencv
+[5.981s] Installing subcriber_node script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/ros2_opencv
+[5.981s] writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/install.log'
+[6.040s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_opencv build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/install.log --single-version-externally-managed install_data

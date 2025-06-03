@@ -1,0 +1,1 @@
+Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/encoder/Desktop/ros2-robot/ros2_ws/src/rplidar_ros -DCMAKE_INSTALL_PREFIX=/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros

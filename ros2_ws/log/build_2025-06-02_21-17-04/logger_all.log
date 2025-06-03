@@ -1,0 +1,602 @@
+[0.288s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[0.288s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ad7c12c6890>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ad7c127cd90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ad7c127cd90>>, mixin_verb=('build',))[0m
+[0.562s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.562s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.562s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.562s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.562s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.563s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.563s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/encoder/Desktop/ros2-robot/ros2_ws'
+[0.563s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.563s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.563s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.563s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.563s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.563s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.563s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.563s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.563s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[0.590s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[0.591s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.591s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[0.591s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[0.591s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.591s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[0.591s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[0.591s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.591s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[0.591s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/3d_display_node) by extensions ['ignore', 'ignore_ament_install']
+[0.592s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/3d_display_node) by extension 'ignore'
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/3d_display_node) by extension 'ignore_ament_install'
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/3d_display_node) by extensions ['colcon_pkg']
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/3d_display_node) by extension 'colcon_pkg'
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/3d_display_node) by extensions ['colcon_meta']
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/3d_display_node) by extension 'colcon_meta'
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/3d_display_node) by extensions ['ros']
+[0.593s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/3d_display_node) by extension 'ros'
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/3d_display_node' with type 'ros.ament_python' and name '3d_display_node'[0m
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lidar_mapper) by extensions ['ignore', 'ignore_ament_install']
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lidar_mapper) by extension 'ignore'
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lidar_mapper) by extension 'ignore_ament_install'
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lidar_mapper) by extensions ['colcon_pkg']
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lidar_mapper) by extension 'colcon_pkg'
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lidar_mapper) by extensions ['colcon_meta']
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lidar_mapper) by extension 'colcon_meta'
+[0.597s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lidar_mapper) by extensions ['ros']
+[0.598s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lidar_mapper) by extension 'ros'
+[0.599s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/lidar_mapper' with type 'ros.ament_python' and name 'lidar_mapper'[0m
+[0.599s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/multi_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.599s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/multi_launch) by extension 'ignore'
+[0.599s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/multi_launch) by extension 'ignore_ament_install'
+[0.599s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/multi_launch) by extensions ['colcon_pkg']
+[0.599s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/multi_launch) by extension 'colcon_pkg'
+[0.599s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/multi_launch) by extensions ['colcon_meta']
+[0.599s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/multi_launch) by extension 'colcon_meta'
+[0.599s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/multi_launch) by extensions ['ros']
+[0.600s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/multi_launch) by extension 'ros'
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/multi_launch' with type 'ros.ament_python' and name 'multi_launch'[0m
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_opencv) by extension 'ignore'
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_opencv) by extension 'ignore_ament_install'
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_opencv) by extensions ['colcon_pkg']
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_opencv) by extension 'colcon_pkg'
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_opencv) by extensions ['colcon_meta']
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_opencv) by extension 'colcon_meta'
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_opencv) by extensions ['ros']
+[0.601s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_opencv) by extension 'ros'
+[0.603s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/ros2_opencv' with type 'ros.ament_python' and name 'ros2_opencv'[0m
+[0.603s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_shared) by extensions ['ignore', 'ignore_ament_install']
+[0.603s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_shared) by extension 'ignore'
+[0.603s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_shared) by extension 'ignore_ament_install'
+[0.603s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_shared) by extensions ['colcon_pkg']
+[0.603s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_shared) by extension 'colcon_pkg'
+[0.603s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_shared) by extensions ['colcon_meta']
+[0.603s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_shared) by extension 'colcon_meta'
+[0.603s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_shared) by extensions ['ros']
+[0.603s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ros2_shared) by extension 'ros'
+[0.604s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/ros2_shared' with type 'ros.ament_cmake' and name 'ros2_shared'[0m
+[0.604s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.605s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rplidar_ros) by extension 'ignore'
+[0.605s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rplidar_ros) by extension 'ignore_ament_install'
+[0.605s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rplidar_ros) by extensions ['colcon_pkg']
+[0.605s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rplidar_ros) by extension 'colcon_pkg'
+[0.605s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rplidar_ros) by extensions ['colcon_meta']
+[0.605s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rplidar_ros) by extension 'colcon_meta'
+[0.605s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rplidar_ros) by extensions ['ros']
+[0.605s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rplidar_ros) by extension 'ros'
+[0.606s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'[0m
+[0.606s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/serial_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[0.606s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/serial_pubsub) by extension 'ignore'
+[0.606s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/serial_pubsub) by extension 'ignore_ament_install'
+[0.606s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/serial_pubsub) by extensions ['colcon_pkg']
+[0.606s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/serial_pubsub) by extension 'colcon_pkg'
+[0.606s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/serial_pubsub) by extensions ['colcon_meta']
+[0.606s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/serial_pubsub) by extension 'colcon_meta'
+[0.606s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/serial_pubsub) by extensions ['ros']
+[0.607s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/serial_pubsub) by extension 'ros'
+[0.607s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/serial_pubsub' with type 'ros.ament_python' and name 'serial_pubsub'[0m
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_ros2) by extension 'ignore'
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_ros2) by extension 'ignore_ament_install'
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_ros2) by extensions ['colcon_pkg']
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_ros2) by extension 'colcon_pkg'
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_ros2) by extensions ['colcon_meta']
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_ros2) by extension 'colcon_meta'
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_ros2) by extensions ['ros']
+[0.608s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_ros2) by extension 'ros'
+[0.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/tello_ros2' with type 'ros.ament_python' and name 'tello_ros2'[0m
+[0.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_takip) by extensions ['ignore', 'ignore_ament_install']
+[0.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_takip) by extension 'ignore'
+[0.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_takip) by extension 'ignore_ament_install'
+[0.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_takip) by extensions ['colcon_pkg']
+[0.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_takip) by extension 'colcon_pkg'
+[0.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_takip) by extensions ['colcon_meta']
+[0.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_takip) by extension 'colcon_meta'
+[0.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_takip) by extensions ['ros']
+[0.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tello_takip) by extension 'ros'
+[0.614s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/tello_takip' with type 'ros.ament_python' and name 'tello_takip'[0m
+[0.615s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_camera_node) by extensions ['ignore', 'ignore_ament_install']
+[0.615s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_camera_node) by extension 'ignore'
+[0.615s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_camera_node) by extension 'ignore_ament_install'
+[0.615s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_camera_node) by extensions ['colcon_pkg']
+[0.615s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_camera_node) by extension 'colcon_pkg'
+[0.616s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_camera_node) by extensions ['colcon_meta']
+[0.616s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_camera_node) by extension 'colcon_meta'
+[0.616s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_camera_node) by extensions ['ros']
+[0.616s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/usb_camera_node) by extension 'ros'
+[0.618s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/usb_camera_node' with type 'ros.ament_python' and name 'usb_camera_node'[0m
+[0.618s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.619s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.619s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.619s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.619s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.676s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[0.676s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[0.685s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 319 installed packages in /opt/ros/humble[0m
+[0.690s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[0.787s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package '3d_display_node' build argument 'cmake_args' from command line to 'None'
+[0.787s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package '3d_display_node' build argument 'cmake_target' from command line to 'None'
+[0.787s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package '3d_display_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.787s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package '3d_display_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.787s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package '3d_display_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.787s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package '3d_display_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.787s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package '3d_display_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.788s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package '3d_display_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.788s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package '3d_display_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.788s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package '3d_display_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/3d_display_node', 'symlink_install': False, 'test_result_base': None}[0m
+[0.788s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_mapper' build argument 'cmake_args' from command line to 'None'
+[0.788s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_mapper' build argument 'cmake_target' from command line to 'None'
+[0.789s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_mapper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.789s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_mapper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.789s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_mapper' build argument 'cmake_clean_first' from command line to 'False'
+[0.789s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_mapper' build argument 'cmake_force_configure' from command line to 'False'
+[0.789s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_mapper' build argument 'ament_cmake_args' from command line to 'None'
+[0.789s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_mapper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.789s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_mapper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.789s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'lidar_mapper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/build/lidar_mapper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/lidar_mapper', 'symlink_install': False, 'test_result_base': None}[0m
+[0.789s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'multi_launch' build argument 'cmake_args' from command line to 'None'
+[0.790s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'multi_launch' build argument 'cmake_target' from command line to 'None'
+[0.790s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'multi_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.790s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'multi_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.790s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'multi_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.790s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'multi_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.790s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'multi_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.790s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'multi_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.790s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'multi_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.790s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'multi_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/multi_launch', 'symlink_install': False, 'test_result_base': None}[0m
+[0.790s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_opencv' build argument 'cmake_args' from command line to 'None'
+[0.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_opencv' build argument 'cmake_target' from command line to 'None'
+[0.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_opencv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_opencv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_opencv' build argument 'cmake_clean_first' from command line to 'False'
+[0.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_opencv' build argument 'cmake_force_configure' from command line to 'False'
+[0.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_opencv' build argument 'ament_cmake_args' from command line to 'None'
+[0.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_opencv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_opencv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.791s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'ros2_opencv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv', 'symlink_install': False, 'test_result_base': None}[0m
+[0.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_shared' build argument 'cmake_args' from command line to 'None'
+[0.792s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_shared' build argument 'cmake_target' from command line to 'None'
+[0.792s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_shared' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.792s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_shared' build argument 'cmake_clean_cache' from command line to 'False'
+[0.792s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_shared' build argument 'cmake_clean_first' from command line to 'False'
+[0.792s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_shared' build argument 'cmake_force_configure' from command line to 'False'
+[0.792s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_shared' build argument 'ament_cmake_args' from command line to 'None'
+[0.792s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_shared' build argument 'catkin_cmake_args' from command line to 'None'
+[0.792s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ros2_shared' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.792s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'ros2_shared' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_shared', 'symlink_install': False, 'test_result_base': None}[0m
+[0.792s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[0.793s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[0.793s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.793s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.793s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.793s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.793s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.793s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.793s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.793s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/rplidar_ros', 'symlink_install': False, 'test_result_base': None}[0m
+[0.793s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'serial_pubsub' build argument 'cmake_args' from command line to 'None'
+[0.794s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'serial_pubsub' build argument 'cmake_target' from command line to 'None'
+[0.794s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'serial_pubsub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.794s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'serial_pubsub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.794s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'serial_pubsub' build argument 'cmake_clean_first' from command line to 'False'
+[0.794s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'serial_pubsub' build argument 'cmake_force_configure' from command line to 'False'
+[0.794s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'serial_pubsub' build argument 'ament_cmake_args' from command line to 'None'
+[0.794s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'serial_pubsub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.794s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'serial_pubsub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.794s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'serial_pubsub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/serial_pubsub', 'symlink_install': False, 'test_result_base': None}[0m
+[0.795s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_ros2' build argument 'cmake_args' from command line to 'None'
+[0.795s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_ros2' build argument 'cmake_target' from command line to 'None'
+[0.795s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.795s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.795s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.795s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.795s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.795s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.795s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.795s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'tello_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros2', 'symlink_install': False, 'test_result_base': None}[0m
+[0.796s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_takip' build argument 'cmake_args' from command line to 'None'
+[0.796s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_takip' build argument 'cmake_target' from command line to 'None'
+[0.796s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_takip' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.796s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_takip' build argument 'cmake_clean_cache' from command line to 'False'
+[0.796s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_takip' build argument 'cmake_clean_first' from command line to 'False'
+[0.796s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_takip' build argument 'cmake_force_configure' from command line to 'False'
+[0.796s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_takip' build argument 'ament_cmake_args' from command line to 'None'
+[0.796s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_takip' build argument 'catkin_cmake_args' from command line to 'None'
+[0.796s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'tello_takip' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.796s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'tello_takip' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_takip', 'symlink_install': False, 'test_result_base': None}[0m
+[0.797s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_camera_node' build argument 'cmake_args' from command line to 'None'
+[0.797s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_camera_node' build argument 'cmake_target' from command line to 'None'
+[0.797s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_camera_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.797s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_camera_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.797s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_camera_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.797s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_camera_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.797s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_camera_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.797s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_camera_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.797s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'usb_camera_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.797s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'usb_camera_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node', 'merge_install': False, 'path': '/home/encoder/Desktop/ros2-robot/ros2_ws/src/usb_camera_node', 'symlink_install': False, 'test_result_base': None}[0m
+[0.797s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.800s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.801s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/3d_display_node' with build type 'ament_python'
+[0.801s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('3d_display_node', 'ament_prefix_path')
+[0.809s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.810s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node/hook/ament_prefix_path.ps1'
+[0.812s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node/hook/ament_prefix_path.dsv'
+[0.813s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node/hook/ament_prefix_path.sh'
+[0.816s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.816s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.827s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/lidar_mapper' with build type 'ament_python'
+[0.828s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lidar_mapper', 'ament_prefix_path')
+[0.829s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/share/lidar_mapper/hook/ament_prefix_path.ps1'
+[0.832s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/share/lidar_mapper/hook/ament_prefix_path.dsv'
+[0.834s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/share/lidar_mapper/hook/ament_prefix_path.sh'
+[0.837s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.838s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.849s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/multi_launch' with build type 'ament_python'
+[0.850s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('multi_launch', 'ament_prefix_path')
+[0.850s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch/hook/ament_prefix_path.ps1'
+[0.853s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch/hook/ament_prefix_path.dsv'
+[0.855s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch/hook/ament_prefix_path.sh'
+[0.857s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.857s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.867s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv' with build type 'ament_python'
+[0.868s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('ros2_opencv', 'ament_prefix_path')
+[0.869s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ros2_opencv/hook/ament_prefix_path.ps1'
+[0.871s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ros2_opencv/hook/ament_prefix_path.dsv'
+[0.873s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ros2_opencv/hook/ament_prefix_path.sh'
+[0.875s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.875s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.888s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_shared' with build type 'ament_cmake'
+[0.888s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_shared'
+[0.889s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.890s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.902s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/rplidar_ros' with build type 'ament_cmake'
+[0.903s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/rplidar_ros'
+[0.905s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.905s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.914s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/serial_pubsub' with build type 'ament_python'
+[0.915s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('serial_pubsub', 'ament_prefix_path')
+[0.916s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/serial_pubsub/hook/ament_prefix_path.ps1'
+[0.918s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/serial_pubsub/hook/ament_prefix_path.dsv'
+[0.920s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/serial_pubsub/hook/ament_prefix_path.sh'
+[0.923s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.923s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.934s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros2' with build type 'ament_python'
+[0.935s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('tello_ros2', 'ament_prefix_path')
+[0.936s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2/hook/ament_prefix_path.ps1'
+[0.938s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2/hook/ament_prefix_path.dsv'
+[0.940s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2/hook/ament_prefix_path.sh'
+[0.942s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.943s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.953s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_takip' with build type 'ament_python'
+[0.954s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('tello_takip', 'ament_prefix_path')
+[0.955s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip/hook/ament_prefix_path.ps1'
+[0.956s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip/hook/ament_prefix_path.dsv'
+[0.958s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip/hook/ament_prefix_path.sh'
+[0.960s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.960s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.970s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/usb_camera_node' with build type 'ament_python'
+[0.971s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('usb_camera_node', 'ament_prefix_path')
+[0.972s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/share/usb_camera_node/hook/ament_prefix_path.ps1'
+[0.974s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/share/usb_camera_node/hook/ament_prefix_path.dsv'
+[0.976s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/share/usb_camera_node/hook/ament_prefix_path.sh'
+[0.978s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.979s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.943s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/3d_display_node'
+[1.944s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.944s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[2.821s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/lidar_mapper'
+[2.822s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.822s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[3.826s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/multi_launch'
+[3.827s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.827s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[4.870s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv'
+[4.871s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.871s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[4.894s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared -- -j12 -l12[0m
+[4.906s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/ros2_ws/build/rplidar_ros -- -j12 -l12[0m
+[6.879s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/serial_pubsub'
+[6.881s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.882s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[8.612s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros2'
+[8.614s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.614s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[9.821s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_takip'
+[9.822s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.823s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[11.138s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/usb_camera_node'
+[11.140s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.141s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[11.624s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared -- -j12 -l12[0m
+[11.639s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared[0m
+[11.692s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(ros2_shared)
+[11.694s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_shared[0m
+[11.742s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared' for CMake module files
+[11.753s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared' for CMake config files
+[11.754s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('ros2_shared', 'cmake_prefix_path')
+[11.762s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.ps1'
+[11.765s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.dsv'
+[11.773s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.sh'
+[11.777s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/bin'
+[11.785s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/lib/pkgconfig/ros2_shared.pc'
+[11.786s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/lib/python3.10/site-packages'
+[11.787s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/bin'
+[11.796s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.ps1'
+[11.803s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.dsv'
+[11.817s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.sh'
+[11.827s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.bash'
+[11.839s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.zsh'
+[11.853s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/colcon-core/packages/ros2_shared)
+[11.863s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(ros2_shared)
+[11.865s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared' for CMake module files
+[11.877s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared' for CMake config files
+[11.887s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('ros2_shared', 'cmake_prefix_path')
+[11.888s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.ps1'
+[11.897s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.dsv'
+[11.900s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.sh'
+[11.913s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/bin'
+[11.914s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/lib/pkgconfig/ros2_shared.pc'
+[11.915s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/lib/python3.10/site-packages'
+[11.917s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/bin'
+[11.925s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.ps1'
+[11.938s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.dsv'
+[11.940s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.sh'
+[11.956s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.bash'
+[11.962s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/ros2_shared/package.zsh'
+[11.972s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_shared/share/colcon-core/packages/ros2_shared)
+[14.899s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/serial_pubsub': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_pubsub build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/install.log --single-version-externally-managed install_data[0m
+[15.210s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_opencv build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/install.log --single-version-externally-managed install_data[0m
+[15.245s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_takip': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_takip build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/install.log --single-version-externally-managed install_data[0m
+[16.064s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/usb_camera_node': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/usb_camera_node build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/install.log --single-version-externally-managed install_data[0m
+[16.461s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/multi_launch': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/multi_launch build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/install.log --single-version-externally-managed install_data[0m
+[16.613s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/lidar_mapper': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/lidar_mapper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar_mapper build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/lidar_mapper/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/lidar_mapper/install.log --single-version-externally-managed install_data[0m
+[17.250s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/3d_display_node': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/3d_display_node build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/install.log --single-version-externally-managed install_data[0m
+[17.668s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros2': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_ros2 build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/install.log --single-version-externally-managed install_data[0m
+[18.518s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch' for CMake module files
+[18.536s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/multi_launch' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/multi_launch build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/multi_launch/install.log --single-version-externally-managed install_data[0m
+[18.560s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch' for CMake config files
+[18.563s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib'
+[18.577s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/bin'
+[18.578s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib/pkgconfig/multi_launch.pc'
+[18.579s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/lib/python3.10/site-packages'
+[18.579s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('multi_launch', 'pythonpath')
+[18.600s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch/hook/pythonpath.ps1'
+[18.601s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch/hook/pythonpath.dsv'
+[18.611s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch/hook/pythonpath.sh'
+[18.614s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/bin'
+[18.625s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(multi_launch)
+[18.627s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch/package.ps1'
+[18.638s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch/package.dsv'
+[18.641s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch/package.sh'
+[18.647s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch/package.bash'
+[18.653s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/multi_launch/package.zsh'
+[18.655s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/ros2_ws/install/multi_launch/share/colcon-core/packages/multi_launch)
+[19.540s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper' for CMake module files
+[19.546s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper' for CMake config files
+[19.549s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/lib'
+[19.549s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/bin'
+[19.550s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/lib/pkgconfig/lidar_mapper.pc'
+[19.555s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/lib/python3.10/site-packages'
+[19.557s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/lidar_mapper' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/lidar_mapper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar_mapper build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/lidar_mapper/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/lidar_mapper/install.log --single-version-externally-managed install_data[0m
+[19.574s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lidar_mapper', 'pythonpath')
+[19.575s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/share/lidar_mapper/hook/pythonpath.ps1'
+[19.578s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/share/lidar_mapper/hook/pythonpath.dsv'
+[19.580s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/share/lidar_mapper/hook/pythonpath.sh'
+[19.587s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/bin'
+[19.587s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(lidar_mapper)
+[19.594s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/share/lidar_mapper/package.ps1'
+[19.600s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/share/lidar_mapper/package.dsv'
+[19.602s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/share/lidar_mapper/package.sh'
+[19.610s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/share/lidar_mapper/package.bash'
+[19.612s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/share/lidar_mapper/package.zsh'
+[19.620s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/ros2_ws/install/lidar_mapper/share/colcon-core/packages/lidar_mapper)
+[19.824s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv' for CMake module files
+[19.827s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv' for CMake config files
+[19.829s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib'
+[19.831s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/ros2_opencv' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_opencv build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/ros2_opencv/install.log --single-version-externally-managed install_data[0m
+[19.834s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/bin'
+[19.841s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/pkgconfig/ros2_opencv.pc'
+[19.842s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/lib/python3.10/site-packages'
+[19.843s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('ros2_opencv', 'pythonpath')
+[19.844s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ros2_opencv/hook/pythonpath.ps1'
+[19.855s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ros2_opencv/hook/pythonpath.dsv'
+[19.857s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ros2_opencv/hook/pythonpath.sh'
+[19.874s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/bin'
+[19.881s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(ros2_opencv)
+[19.886s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ros2_opencv/package.ps1'
+[19.895s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ros2_opencv/package.dsv'
+[19.902s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ros2_opencv/package.sh'
+[19.910s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ros2_opencv/package.bash'
+[19.917s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/ros2_opencv/package.zsh'
+[19.919s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/ros2_ws/install/ros2_opencv/share/colcon-core/packages/ros2_opencv)
+[20.054s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub' for CMake module files
+[20.063s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/serial_pubsub' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_pubsub build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/install.log --single-version-externally-managed install_data[0m
+[20.071s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub' for CMake config files
+[20.074s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib'
+[20.074s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/bin'
+[20.079s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/pkgconfig/serial_pubsub.pc'
+[20.080s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages'
+[20.081s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('serial_pubsub', 'pythonpath')
+[20.082s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/serial_pubsub/hook/pythonpath.ps1'
+[20.088s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/serial_pubsub/hook/pythonpath.dsv'
+[20.090s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/serial_pubsub/hook/pythonpath.sh'
+[20.094s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/bin'
+[20.095s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(serial_pubsub)
+[20.097s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/serial_pubsub/package.ps1'
+[20.100s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/serial_pubsub/package.dsv'
+[20.107s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/serial_pubsub/package.sh'
+[20.109s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/serial_pubsub/package.bash'
+[20.112s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/serial_pubsub/package.zsh'
+[20.114s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/colcon-core/packages/serial_pubsub)
+[20.127s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip' for CMake module files
+[20.130s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_takip' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_takip build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/install.log --single-version-externally-managed install_data[0m
+[20.133s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip' for CMake config files
+[20.136s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib'
+[20.137s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/bin'
+[20.138s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/pkgconfig/tello_takip.pc'
+[20.140s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages'
+[20.141s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('tello_takip', 'pythonpath')
+[20.142s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip/hook/pythonpath.ps1'
+[20.145s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip/hook/pythonpath.dsv'
+[20.147s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip/hook/pythonpath.sh'
+[20.153s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/bin'
+[20.154s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(tello_takip)
+[20.159s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip/package.ps1'
+[20.162s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip/package.dsv'
+[20.165s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip/package.sh'
+[20.168s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip/package.bash'
+[20.170s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip/package.zsh'
+[20.173s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/colcon-core/packages/tello_takip)
+[20.817s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node' for CMake module files
+[20.819s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node' for CMake config files
+[20.829s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/usb_camera_node' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/usb_camera_node build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/usb_camera_node/install.log --single-version-externally-managed install_data[0m
+[20.831s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/lib'
+[20.831s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/bin'
+[20.832s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/lib/pkgconfig/usb_camera_node.pc'
+[20.836s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/lib/python3.10/site-packages'
+[20.836s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('usb_camera_node', 'pythonpath')
+[20.839s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/share/usb_camera_node/hook/pythonpath.ps1'
+[20.842s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/share/usb_camera_node/hook/pythonpath.dsv'
+[20.850s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/share/usb_camera_node/hook/pythonpath.sh'
+[20.856s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/bin'
+[20.857s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(usb_camera_node)
+[20.858s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/share/usb_camera_node/package.ps1'
+[20.866s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/share/usb_camera_node/package.dsv'
+[20.874s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/share/usb_camera_node/package.sh'
+[20.881s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/share/usb_camera_node/package.bash'
+[20.883s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/share/usb_camera_node/package.zsh'
+[20.890s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/ros2_ws/install/usb_camera_node/share/colcon-core/packages/usb_camera_node)
+[21.047s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node' for CMake module files
+[21.054s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/3d_display_node' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/3d_display_node build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/install.log --single-version-externally-managed install_data[0m
+[21.058s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node' for CMake config files
+[21.060s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib'
+[21.063s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/bin'
+[21.063s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/pkgconfig/3d_display_node.pc'
+[21.064s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages'
+[21.065s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('3d_display_node', 'pythonpath')
+[21.069s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node/hook/pythonpath.ps1'
+[21.071s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node/hook/pythonpath.dsv'
+[21.090s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node/hook/pythonpath.sh'
+[21.104s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/bin'
+[21.104s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(3d_display_node)
+[21.106s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node/package.ps1'
+[21.121s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node/package.dsv'
+[21.124s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node/package.sh'
+[21.129s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node/package.bash'
+[21.135s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node/package.zsh'
+[21.142s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/colcon-core/packages/3d_display_node)
+[21.310s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2' for CMake module files
+[21.312s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2' for CMake config files
+[21.314s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_ros2' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_ros2 build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_ros2/install.log --single-version-externally-managed install_data[0m
+[21.320s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib'
+[21.320s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/bin'
+[21.321s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/pkgconfig/tello_ros2.pc'
+[21.326s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/lib/python3.10/site-packages'
+[21.326s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('tello_ros2', 'pythonpath')
+[21.327s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2/hook/pythonpath.ps1'
+[21.329s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2/hook/pythonpath.dsv'
+[21.338s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2/hook/pythonpath.sh'
+[21.341s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/bin'
+[21.342s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(tello_ros2)
+[21.343s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2/package.ps1'
+[21.354s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2/package.dsv'
+[21.362s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2/package.sh'
+[21.364s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2/package.bash'
+[21.366s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/tello_ros2/package.zsh'
+[21.368s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_ros2/share/colcon-core/packages/tello_ros2)
+[42.652s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/encoder/Desktop/ros2-robot/ros2_ws/build/rplidar_ros -- -j12 -l12[0m
+[42.657s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/ros2_ws/build/rplidar_ros[0m
+[42.714s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(rplidar_ros)
+[42.715s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros' for CMake module files
+[42.716s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/encoder/Desktop/ros2-robot/ros2_ws/build/rplidar_ros[0m
+[42.719s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros' for CMake config files
+[42.720s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[42.721s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[42.722s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[42.724s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[42.725s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/lib'
+[42.726s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/bin'
+[42.726s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[42.727s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/lib/python3.10/site-packages'
+[42.727s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/bin'
+[42.728s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[42.731s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[42.733s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[42.734s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[42.735s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[42.737s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[42.739s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(rplidar_ros)
+[42.740s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros' for CMake module files
+[42.742s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros' for CMake config files
+[42.743s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[42.743s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[42.745s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[42.746s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[42.748s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/lib'
+[42.748s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/bin'
+[42.748s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[42.749s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/lib/python3.10/site-packages'
+[42.749s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/bin'
+[42.750s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[42.752s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[42.753s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[42.754s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[42.756s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[42.757s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/encoder/Desktop/ros2-robot/ros2_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[42.758s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[42.760s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[42.761s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[42.761s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[43.171s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[43.171s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[43.171s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[43.225s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[43.226s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/local_setup.ps1'
+[43.229s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/encoder/Desktop/ros2-robot/ros2_ws/install/_local_setup_util_ps1.py'
+[43.233s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/setup.ps1'
+[43.237s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/local_setup.sh'
+[43.239s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/encoder/Desktop/ros2-robot/ros2_ws/install/_local_setup_util_sh.py'
+[43.240s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/setup.sh'
+[43.244s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/local_setup.bash'
+[43.245s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/setup.bash'
+[43.248s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/local_setup.zsh'
+[43.250s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/encoder/Desktop/ros2-robot/ros2_ws/install/setup.zsh'

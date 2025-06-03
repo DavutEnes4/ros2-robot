@@ -1,0 +1,50 @@
+[13.983s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/serial_pubsub': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_pubsub build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/install.log --single-version-externally-managed install_data
+[18.738s] running egg_info
+[18.742s] creating ../../build/serial_pubsub/serial_pubsub.egg-info
+[18.753s] writing ../../build/serial_pubsub/serial_pubsub.egg-info/PKG-INFO
+[18.757s] writing dependency_links to ../../build/serial_pubsub/serial_pubsub.egg-info/dependency_links.txt
+[18.763s] writing entry points to ../../build/serial_pubsub/serial_pubsub.egg-info/entry_points.txt
+[18.769s] writing requirements to ../../build/serial_pubsub/serial_pubsub.egg-info/requires.txt
+[18.772s] writing top-level names to ../../build/serial_pubsub/serial_pubsub.egg-info/top_level.txt
+[18.772s] writing manifest file '../../build/serial_pubsub/serial_pubsub.egg-info/SOURCES.txt'
+[18.786s] reading manifest file '../../build/serial_pubsub/serial_pubsub.egg-info/SOURCES.txt'
+[18.787s] adding license file 'LICENSE'
+[18.787s] writing manifest file '../../build/serial_pubsub/serial_pubsub.egg-info/SOURCES.txt'
+[18.792s] running build
+[18.792s] running build_py
+[18.792s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build
+[18.792s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build/lib
+[18.793s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build/lib/serial_pubsub
+[18.793s] copying serial_pubsub/keyboard_subscriber.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build/lib/serial_pubsub
+[18.793s] copying serial_pubsub/keyboard_publisher.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build/lib/serial_pubsub
+[18.793s] copying serial_pubsub/serial_reader_node.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build/lib/serial_pubsub
+[18.794s] copying serial_pubsub/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build/lib/serial_pubsub
+[18.794s] copying serial_pubsub/controller_publisher.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build/lib/serial_pubsub
+[18.795s] running install
+[18.797s] running install_lib
+[18.803s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub
+[18.803s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build/lib/serial_pubsub/keyboard_subscriber.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub
+[18.803s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build/lib/serial_pubsub/keyboard_publisher.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub
+[18.804s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build/lib/serial_pubsub/serial_reader_node.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub
+[18.804s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build/lib/serial_pubsub/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub
+[18.804s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build/lib/serial_pubsub/controller_publisher.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub
+[18.808s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub/keyboard_subscriber.py to keyboard_subscriber.cpython-310.pyc
+[18.814s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub/keyboard_publisher.py to keyboard_publisher.cpython-310.pyc
+[18.815s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub/serial_reader_node.py to serial_reader_node.cpython-310.pyc
+[18.817s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub/__init__.py to __init__.cpython-310.pyc
+[18.819s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub/controller_publisher.py to controller_publisher.cpython-310.pyc
+[18.823s] running install_data
+[18.826s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/ament_index
+[18.827s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/ament_index/resource_index
+[18.828s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/ament_index/resource_index/packages
+[18.828s] copying resource/serial_pubsub -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/ament_index/resource_index/packages
+[18.828s] copying package.xml -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/share/serial_pubsub
+[18.839s] running install_egg_info
+[18.840s] Copying ../../build/serial_pubsub/serial_pubsub.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages/serial_pubsub-0.0.0-py3.10.egg-info
+[18.841s] running install_scripts
+[18.953s] Installing cPublisher script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/serial_pubsub
+[18.954s] Installing kPublisher script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/serial_pubsub
+[18.954s] Installing kSubscriber script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/serial_pubsub
+[18.955s] Installing serial_reader_node script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/serial_pubsub
+[18.955s] writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/install.log'
+[19.147s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/serial_pubsub' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/serial_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_pubsub build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/serial_pubsub/install.log --single-version-externally-managed install_data

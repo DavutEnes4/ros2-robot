@@ -1,6 +1,8 @@
+#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from sensor_msgs.msg import Image, PointCloud2
+from sensor_msgs.msg import Image, PointCloud2, PointField
+from std_msgs.msg import Header
 from cv_bridge import CvBridge
 import cv2
 import numpy as np
@@ -13,86 +15,108 @@ class CameraLidarMapper(Node):
     def __init__(self):
         super().__init__('camera_lidar_mapper')
         self.bridge = CvBridge()
-        self.fx = 320
-        self.fy = 320
-        self.cx = 160
-        self.cy = 120
+
+        # Kamera iç parametreleri
+        self.fx, self.fy = 320, 320
+        self.cx, self.cy = 160, 120
 
         # MiDaS derinlik modeli
-        self.midas = torch.hub.load("intel-isl/MiDaS", "MiDaS_small", trust_repo=True)
-        self.midas.eval()
         self.device = torch.device("cpu")
-        self.midas.to(self.device)
-        self.midas_transforms = torch.hub.load("intel-isl/MiDaS", "transforms", trust_repo=True).small_transform
+        self.midas = torch.hub.load("intel-isl/MiDaS",
+                                    "MiDaS_small",
+                                    trust_repo=True).to(self.device).eval()
+        self.midas_tfms = torch.hub.load("intel-isl/MiDaS",
+                                         "transforms",
+                                         trust_repo=True).small_transform
 
-        self.image_sub = self.create_subscription(Image, "/camera/image_raw", self.image_callback, 10)
-        self.lidar_sub = self.create_subscription(PointCloud2, "/lidar/points", self.lidar_callback, 10)
+        # ROS2 abone / yayımlayıcı
+        self.image_sub = self.create_subscription(Image,
+                                                  "/camera/image_raw",
+                                                  self.image_cb, 10)
+        self.lidar_sub = self.create_subscription(PointCloud2,
+                                                  "/lidar/points",
+                                                  self.lidar_cb, 10)
+        self.cloud_pub = self.create_publisher(PointCloud2,
+                                               "/fused_cloud", 10)
 
-        self.latest_lidar = np.empty((0, 3))
+        self.latest_lidar = np.empty((0, 3), dtype=np.float32)
         self.pcd_total = o3d.geometry.PointCloud()
 
-    def image_callback(self, msg):
+    # ---------- Call-back’ler ----------
+    def image_cb(self, msg: Image):
         try:
-            cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
-            frame_resized = cv2.resize(cv_image, (320, 240))
-            rgb = cv2.cvtColor(frame_resized, cv2.COLOR_BGR2RGB)
-            input_tensor = self.midas_transforms(rgb).to(self.device)
+            cv_img = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+            rgb = cv2.cvtColor(cv2.resize(cv_img, (320, 240)),
+                               cv2.COLOR_BGR2RGB)
 
+            # Derinlik tahmini
+            inp = self.midas_tfms(rgb).to(self.device)
             with torch.no_grad():
-                prediction = self.midas(input_tensor)
-                prediction = torch.nn.functional.interpolate(
-                    prediction.unsqueeze(1),
-                    size=rgb.shape[:2],
-                    mode="bicubic",
-                    align_corners=False
+                pred = self.midas(inp)
+                pred = torch.nn.functional.interpolate(
+                    pred.unsqueeze(1), size=rgb.shape[:2],
+                    mode="bicubic", align_corners=False
                 ).squeeze()
-                depth_map = prediction.cpu().numpy()
+                depth_map = pred.cpu().numpy()
 
-            cam_points = self.depth_to_point_cloud(depth_map)
+            # Kameradan nokta bulutu
             pc_cam = o3d.geometry.PointCloud()
-            pc_cam.points = o3d.utility.Vector3dVector(cam_points)
+            pc_cam.points = o3d.utility.Vector3dVector(
+                self.depth_to_pc(depth_map))
 
-            if len(self.latest_lidar) > 0:
+            # LIDAR ile hizalama (ICP)
+            if len(self.latest_lidar):
                 pc_lidar = o3d.geometry.PointCloud()
-                pc_lidar.points = o3d.utility.Vector3dVector(self.latest_lidar)
-
+                pc_lidar.points = o3d.utility.Vector3dVector(
+                    self.latest_lidar)
                 reg = o3d.pipelines.registration.registration_icp(
                     pc_cam, pc_lidar, 1.0, np.eye(4),
-                    o3d.pipelines.registration.TransformationEstimationPointToPoint()
-                )
-                aligned = pc_cam.transform(reg.transformation)
-                self.pcd_total += aligned + pc_lidar
+                    o3d.pipelines.registration.
+                    TransformationEstimationPointToPoint())
+                pc_cam.transform(reg.transformation)
+                self.pcd_total += pc_cam + pc_lidar
             else:
                 self.pcd_total += pc_cam
 
-            # Görüntüleme (tek pencere)
-            o3d.visualization.draw_geometries([self.pcd_total], window_name="Harita", width=800, height=600)
+            # RViz2’ye yayınla
+            self.publish_cloud(self.pcd_total)
 
         except Exception as e:
-            self.get_logger().error(f"Image processing error: {e}")
+            self.get_logger().error(f"Image error: {e}")
 
-    def lidar_callback(self, msg):
+    def lidar_cb(self, msg: PointCloud2):
         try:
-            points = []
-            for p in pc2.read_points(msg, skip_nans=True):
-                points.append([p[0], p[1], p[2]])
-            self.latest_lidar = self.filter_lidar_fov(np.array(points))
+            pts = np.array([[p[0], p[1], p[2]]
+                            for p in pc2.read_points(msg,
+                                                     skip_nans=True)],
+                           dtype=np.float32)
+            self.latest_lidar = self.fov_filter(pts)
         except Exception as e:
-            self.get_logger().error(f"Lidar parsing error: {e}")
+            self.get_logger().error(f"Lidar error: {e}")
 
-    def depth_to_point_cloud(self, depth_map):
-        h, w = depth_map.shape
+    # ---------- Yardımcı fonksiyonlar ----------
+    def depth_to_pc(self, depth):
+        h, w = depth.shape
         i, j = np.meshgrid(np.arange(w), np.arange(h))
-        z = depth_map
-        x = (i - self.cx) * z / self.fx
-        y = (j - self.cy) * z / self.fy
-        return np.stack((x, y, z), axis=-1).reshape(-1, 3)
+        z = depth.flatten()
+        x = (i.flatten() - self.cx) * z / self.fx
+        y = (j.flatten() - self.cy) * z / self.fy
+        return np.stack((x, y, z), axis=-1)
 
-    def filter_lidar_fov(self, points, angle_deg=60):
-        angles = np.arctan2(points[:, 1], points[:, 0]) * 180 / np.pi
-        mask = (angles > -angle_deg/2) & (angles < angle_deg/2)
-        return points[mask]
+    def fov_filter(self, pts, angle=60):
+        ang = np.degrees(np.arctan2(pts[:, 1], pts[:, 0]))
+        mask = (-angle/2 < ang) & (ang < angle/2)
+        return pts[mask]
 
+    def publish_cloud(self, pcd: o3d.geometry.PointCloud):
+        pts_np = np.asarray(pcd.points, dtype=np.float32)
+        header = Header()
+        header.stamp = self.get_clock().now().to_msg()
+        header.frame_id = "map"                 # RViz2’de TF’nize göre değiştirin
+        cloud_msg = pc2.create_cloud_xyz32(header, pts_np.tolist())
+        self.cloud_pub.publish(cloud_msg)
+
+# ---------- main ----------
 def main(args=None):
     rclpy.init(args=args)
     node = CameraLidarMapper()
@@ -104,5 +128,5 @@ def main(args=None):
         node.destroy_node()
         rclpy.shutdown()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -1,0 +1,37 @@
+[16.446s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/3d_display_node': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/3d_display_node build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/install.log --single-version-externally-managed install_data
+[19.826s] running egg_info
+[19.829s] creating ../../build/3d_display_node/3d_display_node.egg-info
+[19.838s] writing ../../build/3d_display_node/3d_display_node.egg-info/PKG-INFO
+[19.839s] writing dependency_links to ../../build/3d_display_node/3d_display_node.egg-info/dependency_links.txt
+[19.839s] writing entry points to ../../build/3d_display_node/3d_display_node.egg-info/entry_points.txt
+[19.840s] writing requirements to ../../build/3d_display_node/3d_display_node.egg-info/requires.txt
+[19.840s] writing top-level names to ../../build/3d_display_node/3d_display_node.egg-info/top_level.txt
+[19.845s] writing manifest file '../../build/3d_display_node/3d_display_node.egg-info/SOURCES.txt'
+[19.863s] reading manifest file '../../build/3d_display_node/3d_display_node.egg-info/SOURCES.txt'
+[19.865s] writing manifest file '../../build/3d_display_node/3d_display_node.egg-info/SOURCES.txt'
+[19.866s] running build
+[19.866s] running build_py
+[19.867s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build
+[19.878s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build/lib
+[19.881s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build/lib/3d_display_node
+[19.886s] copying 3d_display_node/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build/lib/3d_display_node
+[19.887s] copying 3d_display_node/camera_lidar_mapper.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build/lib/3d_display_node
+[19.887s] running install
+[19.889s] running install_lib
+[19.896s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages/3d_display_node
+[19.896s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build/lib/3d_display_node/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages/3d_display_node
+[19.897s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build/lib/3d_display_node/camera_lidar_mapper.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages/3d_display_node
+[19.897s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages/3d_display_node/__init__.py to __init__.cpython-310.pyc
+[19.903s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages/3d_display_node/camera_lidar_mapper.py to camera_lidar_mapper.cpython-310.pyc
+[19.906s] running install_data
+[19.910s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/ament_index
+[19.911s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/ament_index/resource_index
+[19.911s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/ament_index/resource_index/packages
+[19.916s] copying resource/3d_display_node -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/ament_index/resource_index/packages
+[19.917s] copying package.xml -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/share/3d_display_node
+[19.918s] running install_egg_info
+[19.942s] Copying ../../build/3d_display_node/3d_display_node.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages/3d_display_node-0.0.0-py3.10.egg-info
+[19.946s] running install_scripts
+[20.110s] Installing camera_lidar_mapper script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/3d_display_node
+[20.111s] writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/install.log'
+[20.250s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/3d_display_node' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/3d_display_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/3d_display_node build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/3d_display_node/install.log --single-version-externally-managed install_data

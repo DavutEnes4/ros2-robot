@@ -1,0 +1,43 @@
+[14.291s] Invoking command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_takip': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_takip build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/install.log --single-version-externally-managed install_data
+[17.999s] running egg_info
+[18.002s] creating ../../build/tello_takip/tello_takip.egg-info
+[18.003s] writing ../../build/tello_takip/tello_takip.egg-info/PKG-INFO
+[18.003s] writing dependency_links to ../../build/tello_takip/tello_takip.egg-info/dependency_links.txt
+[18.003s] writing entry points to ../../build/tello_takip/tello_takip.egg-info/entry_points.txt
+[18.004s] writing requirements to ../../build/tello_takip/tello_takip.egg-info/requires.txt
+[18.004s] writing top-level names to ../../build/tello_takip/tello_takip.egg-info/top_level.txt
+[18.004s] writing manifest file '../../build/tello_takip/tello_takip.egg-info/SOURCES.txt'
+[18.026s] reading manifest file '../../build/tello_takip/tello_takip.egg-info/SOURCES.txt'
+[18.026s] writing manifest file '../../build/tello_takip/tello_takip.egg-info/SOURCES.txt'
+[18.032s] running build
+[18.034s] running build_py
+[18.035s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build
+[18.035s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib
+[18.035s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip
+[18.036s] copying tello_takip/tello_nesne_analiz.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip
+[18.036s] copying tello_takip/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip
+[18.036s] copying tello_takip/tello_nesne_tespit.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip
+[18.044s] copying tello_takip/best3.pt -> /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip
+[18.279s] running install
+[18.282s] running install_lib
+[18.295s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip
+[18.296s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip/tello_nesne_analiz.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip
+[18.296s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip/best3.pt -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip
+[18.519s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip/__init__.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip
+[18.519s] copying /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build/lib/tello_takip/tello_nesne_tespit.py -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip
+[18.529s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip/tello_nesne_analiz.py to tello_nesne_analiz.cpython-310.pyc
+[18.544s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip/__init__.py to __init__.cpython-310.pyc
+[18.544s] byte-compiling /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip/tello_nesne_tespit.py to tello_nesne_tespit.cpython-310.pyc
+[18.605s] running install_data
+[18.606s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/ament_index
+[18.606s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/ament_index/resource_index
+[18.606s] creating /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/ament_index/resource_index/packages
+[18.607s] copying resource/tello_takip -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/ament_index/resource_index/packages
+[18.607s] copying package.xml -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip
+[18.624s] copying tello_takip/best3.pt -> /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/share/tello_takip
+[18.829s] running install_egg_info
+[18.840s] Copying ../../build/tello_takip/tello_takip.egg-info to /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages/tello_takip-0.0.1-py3.10.egg-info
+[18.852s] running install_scripts
+[18.982s] Installing tello_nesne_tespit script to /home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/tello_takip
+[18.992s] writing list of installed files to '/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/install.log'
+[19.176s] Invoked command in '/home/encoder/Desktop/ros2-robot/ros2_ws/src/tello_takip' returned '0': PYTHONPATH=/home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Desktop/ros2-robot/ros2_ws/install/tello_takip/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tello_takip build --build-base /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/build install --record /home/encoder/Desktop/ros2-robot/ros2_ws/build/tello_takip/install.log --single-version-externally-managed install_data
